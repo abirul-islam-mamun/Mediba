@@ -3,15 +3,88 @@
 
 
 
-
+// appontment section start 
+.appoint-head {
+    background: $them-5;
+}
+.appoint-head-wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+    @media (max-width: 768px) {
+        column-gap: 35px;
+    }
+    @media (max-width: 576px) {
+        column-gap: 25px;
+    }
+    .telephone-icon {
+        height: 95px;
+        width: 100px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background: $them-1;
+        color: $white;
+        font-size: 60px;
+        font-weight: 700;
+        @media (max-width: 768px) {
+            font-size: 40px;
+            height: 80px;
+        }
+        @media (max-width: 576px) {
+            font-size: 30px;
+        }
+    }
+    .head-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: $white;
+        line-height: 30px;
+        @media (max-width: 768px) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+        @media (max-width: 576px) {
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+}
 
 // first cta section start 
 .first-cta {
-    background-image: url(/assets/images/cta/cta-bg.jpg);
+    background-image: url(../images/cta/cta-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 80px 0;
+    padding: 75px 0;
+    overflow: hidden;
+    .row{
+        position: relative;
+        align-items: center;
+    }
+    .mice-shape {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -13%;
+        @media (max-width:1653px) {
+            left: -8%;
+            img{
+                width: 60px;
+            }
+        }
+        @media (min-width: 1400px) and (max-width: 1500px) {
+            left: -5%;
+        }
+        @media (max-width: 1400px) {
+            left: -6%;
+        }
+        @media (max-width:1260px) {
+            display: none;
+        }
+    }
 }
 .cta-text {
     font-size: 40px;
@@ -19,6 +92,19 @@
     font-weight: 700;
     color: $white;
     width: 95%;
+    @media (max-width: 1200px) {
+        font-size: 33px;
+        line-height: 42px;
+        width: 100%;
+    }
+    @media (max-width: 991px) {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    @media (max-width: 768px) {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 .cta-input{
     position: relative;
@@ -33,6 +119,10 @@
         border: none;
         outline: none;
         padding: 0 45px;
+        @media (max-width: 425px) {
+           height: 60px;
+           font-size: 14px;
+        }
     }
     .cta-sub-btn {
         height: 80px;
@@ -46,5 +136,10 @@
         background: #081e41;
         color: $white;
         font-size: 18px;
+        @media (max-width: 425px) {
+           height: 60px;
+           font-size: 14px;
+           padding: 20px;
+        }
     }
 }

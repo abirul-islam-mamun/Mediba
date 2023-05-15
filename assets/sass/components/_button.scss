@@ -1,7 +1,7 @@
 
 .theme-btn {
 	display: inline-block;
-	background: $them-1;
+	background: $them-5;
 	color: $white;
 	transition: all .3s ease;
 	cursor: pointer;
@@ -12,25 +12,23 @@
 	text-align: center;
 	border: 1px solid transparent;
 	border-radius: 5px;
-	padding: 0px 0px 0px 30px;
-	i {
-		height: 45px;
-		width: 45px;
-		line-height: 45px;
-		text-align: center;
-		background: $icon-bg-2;
-		border-radius: 50px;
-		display: inline-block;
-		color: $primary-theme;
-		font-size: 20px;
-		font-weight: 500;
-		margin-left: 20px;
-		margin-right: 3px;
+	padding: 0 30px 0 50px;
+	position: relative;
+	&::before{
+		position: absolute;
+		content: "";
+		height: 15px;
+		width: 15px;
+		border: 4px solid $white;
+		border-radius: 50%;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 25px;
 	}
 	&:hover {
-		background: $white;
-		color: $primary-theme;
-		border: 1px solid $primary-theme;
+		background: $them-1;
+		color: $white;
+		border: 1px solid $them-1;
 	}
 }
 

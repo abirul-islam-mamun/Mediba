@@ -1,4 +1,228 @@
+// single team card 
+.single-team {
+    background: $them-bg-2;
+    margin-bottom: 30px;
+    .team-img {
+        position: relative;
+        // margin-bottom: 30px;
+        a{img{
+            width: 100%;
+        }}
+        .top-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            a {
+                height: 55px;
+                width: 55px;
+                background: $them-1;
+                color: $white;
+                font-size: 20px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .3s ease;
+            }
+        }
+        .team-category {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            left: 0;
+            bottom: 0;
+            li {
+                height: 40px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                padding: 0px 25px;
+            }
+            .category{
+                font-size: 17px;
+                text-transform: uppercase;
+                line-height: 26px;
+                background: $them-5;
+                // display: inline-block;
+                color: $white;
+                transition: all .3s ease;
+                @media (max-width: 1200px) {
+                    font-size: 14px;
+                }
+            }
+            .category-date {
+                font-size: 14px;
+                color: $ash-font;
+                background: $white;
+                @media (max-width: 1200px) {
+                    font-size: 11px;
+                }
+            }
+        }
+        &:hover{
+            .top-icon {
+                a {
+                    background: $them-5;
+                }
+            }
+            .team-category{
+                .category{
+                    background: $them-1;
+                }
+            }
+        }
+    }    
+} 
 
+.team-info-details {
+    .team-title {
+        padding-top: 30px;
+        a{
+            font-size: 22px;
+            line-height: 34px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: block;
+            color: $font-color-1;
+            padding: 0 30px;
+            transition: all .3s ease;
+            &:hover{
+                color: $them-1;
+            }
+            @media (max-width: 1200px) {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+    }
+    .team-info {
+        font-size: 17px;
+        line-height: 26px;
+        color: $ash-font;
+        margin-bottom: 25px;
+        padding: 0 30px;
+        @media (max-width: 1200px) {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+    .coment-review {
+        padding: 20px 30px;
+        border-top: 1px solid $border-2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;            
+        .comment {
+            font-size: 16px;
+            color: $ash-font;
+            @media (max-width: 1200px) {
+                font-size: 12px;
+            }
+        }
+        .review-start {
+            display: flex;
+            align-items: center;
+            li{
+                color: $ash-font;
+                font-size: 16px;
+                margin-right: 6px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                @media (max-width: 1200px) {
+                    font-size: 12px;
+                }
+            }
+            .review-count {
+                margin-left: 4px;
+            }
+        }
+        
+    }
+}
 
-// card icon background color 
-
+// medical service 
+ 
+.medical-service {
+    background: transparent;
+    .team-img {
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            height: 100%;
+            background-color: rgb(32, 50, 64);
+            right: 0;
+            top: 0;
+            width: 0;
+            transition: all .4s ease;
+            visibility: hidden;
+            opacity: 0;    
+        }
+        // a{
+        //     display: block;
+        //     position: relative;
+        // }
+        .medi-service-icon {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all .7s ease;
+            height: 60px;
+            width: 60px;
+            background: $them-1;
+            color: $white;
+            font-size: 30px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .medi-info-details {
+        border: 1px solid #dddddd;
+        border-top: none;
+        padding: 30px 35px;
+        transition: all .3s ease;
+        @media (max-width: 1200px) and (min-width:991px) {
+            padding: 25px 30px;
+        }
+        @media (max-width: 576px) {
+            padding: 20px;
+        }
+        .team-title {
+            padding-top: 0;
+            a{
+                padding: 0;
+            }
+        }
+        .team-info {
+            padding: 0;
+        }
+    }
+    &:hover{
+        .team-img {
+            &::before{
+                visibility: visible;
+                opacity: 0.79;
+                width: 50%;
+            }
+            .medi-service-icon{
+                bottom: 50%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                a {
+                    background: $them-1;
+                }
+            } 
+        }
+        .medi-info-details{
+            box-shadow: 0px 0px 14.76px 3.24px rgba(0, 0, 0, 0.18);
+        }
+        .service-more-btn {
+            background: $them-1;
+        }
+    }
+}
