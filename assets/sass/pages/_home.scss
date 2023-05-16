@@ -51,6 +51,72 @@
         }
     }
 }
+.appointment-form-wrap{
+    background: $them-bg-2;
+    position: relative;
+    .doctors-shape {
+        position: absolute;
+        bottom: 0;
+        left: calc(15% - 100px);
+        img{
+            width: 700px;
+        }
+        @media (max-width: 1840px) {
+            left: calc(15% - 200px);        
+        }
+        @media (max-width: 1740px) {
+            left: calc(15% - 200px);
+        }
+        @media (max-width: 1440px) {
+            left: calc(14% - 200px);
+            img{
+                width: 630px;
+            }
+        }
+        @media (max-width: 1200px) {
+            left: calc(9% - 200px);
+        }
+        @media (max-width: 1040px) {
+            left: calc(6% - 200px);
+        }
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+    .support-shape {
+        position: absolute;
+        bottom: 100px;
+        right: 40px;
+        img{
+            width: 220px;
+        }
+        @media (max-width:1870px) {
+            img{
+                width: 200px;
+            }
+        }
+        @media (max-width:1870px) {
+            right: 20px;
+            img{
+                width: 180px;
+            }
+        }
+        @media (max-width:1720px) {
+            img{
+                width: 140px;
+            }
+        }
+        @media (max-width:1640px) {
+            right: 20;
+            img{
+                width: 80px;
+            }
+        }
+        @media (max-width:1499px) {
+            display: none;
+        }
+    }
+}
 
 // first cta section start 
 .first-cta {
