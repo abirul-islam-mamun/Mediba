@@ -1,84 +1,126 @@
 
-
-.hero-area {
+// first hero seciton 
+.first-hero {
+    background-image: url(../images/hero/hero01.jpg);
+    height: 890px;
     width: 100%;
-    height: 850px;
-    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    justify-content: center;
     align-items: center;
-    @media (max-width: 768px) {
-        height: 600px;
+    position: relative;
+    @media (max-width: 1585px) {
+        height: 800px;
     }
-    @media (max-width: 576px) {
-        height: 400px;
+    @media (max-width: 1400px) {
+        height: 680px;
+    }
+    @media (max-width: 1200px) {
+        height: 650px;
+    }
+    @media (max-width: 768px) {
+        height: 500px;
+    }
+    .shape-01 {
+        position: absolute;
+        bottom: 0;
+        right: calc(8% - 45px);
+        width: 685px;
+        @media (max-width: 1700px) {
+            width: 630px;
+        }
+        @media (max-width: 1585px) {
+            width: 600px;
+            right: calc(6% - 45px);
+        }
+        @media (max-width: 1400px) {
+            width: 500px;
+            right: calc(14% - 45px);
+        }
+        @media (max-width: 1200px) {
+            width: 450px;
+            right: 0;
+        }
+        @media (max-width: 992px) {
+            display: none;
+        }
     }
 }
-.hero-content {
-    h4 {
-        font-size: 28px;
-        line-height: 55px;
-        font-weight: 400;
-        @media (max-width: 768px) {
-            font-size: 25px;
-            line-height: 45px;
-        }
-        @media (max-width: 576px) {
-            font-size: 20px;
-            line-height: 30px;
-        }
-    }
-    h2 {
-        font-size: 50px;
-        line-height: 70px;
+.hero-first-content {
+    .title {
+        font-size: 70px;
         font-weight: 700;
-        text-transform: capitalize;
-        margin-bottom: 20px;
+        color: $content-color;
+        line-height: 83px;
+        margin-top: 10px;
+        margin-bottom: 16px;
+        @media (max-width: 1585px) {
+           font-size: 60px;
+           width: 90%;
+        }
+        @media (max-width: 1400px) {
+           font-size: 50px;
+           line-height: 70px;
+           width: 90%;
+        }
+        @media (max-width: 1200px) {
+           font-size: 55px;
+           line-height: 65px;
+        }
+        @media (max-width: 991px) {
+            width: 95%;
+        }
         @media (max-width: 768px) {
-            font-size: 30px;
-            line-height: 45px;
+           font-size: 45px;
+           line-height: 55px;
+           width: 100%;
         }
         @media (max-width: 576px) {
-            font-size: 25px;
-            line-height: 35px;
-        }
-        span {
-            color: $primary-theme;
+           font-size: 35px;
+           line-height: 45px;
+           margin-bottom: 10px;
         }
     }
-    p {
-        font-size: 18px;
-        line-height: 30px;
-        font-weight: 400;
-        margin-bottom: 30px;
+    .subtitle {
+        font-size: 17px;
+        color: $ash-font;
+        line-height: 28px;
+        margin-bottom: 45px;
+        width: 80%;
+        @media (max-width: 1585px) {
+            width: 70%;
+        }
+        @media (max-width: 768px) {
+            font-size: 15px;
+            line-height: 26px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    .hero-btn-div {
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
         @media (max-width: 576px) {
-            font-size: 16px;
-            line-height: 22px;
-        }
-    }
-}
-
-// second hero start 
-.hero-area-2 {
-    width: 100%;
-    height: 405px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media (max-width: 768px) {
-        height: 300px;
-    }
-    @media (max-width: 576px) {
-        height: 350px;
-    }
-}
-.hero-content-2 {
-    h4 {
-        font-size: 30px;
-        line-height: 45px;
-        color: $black;
+           flex-direction: column;
+           justify-content: center;
+           row-gap: 25px;
+         }
+         .hero-btn {
+             background: $them-1;
+             &:hover{
+                background: $them-4;
+                border: 1px solid $them-4;
+             }
+         }
+         .experience-text {
+             font-size: 21px;
+             color: $content-color;
+             text-decoration: underline;        
+             @media (max-width: 768px) {
+                 font-size: 18px;
+             }
+         }
     }
 }
