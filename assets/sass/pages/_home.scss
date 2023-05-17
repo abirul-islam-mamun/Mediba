@@ -177,6 +177,235 @@
     }
 }
 //counter end 
+// book apointment start 
+.book-appoint-area {
+    background-image: url(../images/book/book.jpg);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &::before{
+        position: absolute;
+        content: "";
+        background-color: rgb(32, 50, 64);
+        opacity: 0.929;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 11;
+    }
+    .book-wraps{
+        align-items: center;
+    }
+    .add-text {
+        position: relative;
+        z-index: 111;
+        font-size: 40px;
+        line-height: 55px;
+        color: $white;
+        font-weight: 700;
+        @media (max-width:991px) {
+            width: 80%;
+            font-size: 30px;
+            line-height: 45px;
+        }
+        @media (max-width:576px) {
+           font-size: 25px;
+           width: 100%;
+           line-height: 35px;
+        }
+    }
+    .button-div {
+        position: relative;
+        z-index: 111;     
+        text-align: end;   
+        @media (max-width:991px) {
+            text-align: start;
+        }
+    }
+    .shape01 {
+        position: absolute;
+        top: -71px;
+        left: 2px;
+        z-index: 11;
+        width: 340px; 
+        @media (max-width:1400px) {
+            width: 330px;
+        }
+        @media (max-width:1200px) {
+            display: none;
+        }
+    }
+    .shape02{
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        z-index: 11;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        @media (max-width:1400px) {
+            width: 170px;
+        }
+        @media (max-width:991px) {
+            right: 70px;
+            left: unset;
+            transform: translate(0%, -50%);
+        }
+        @media (max-width:768px) {
+            right: 30px;
+        }
+        @media (max-width:625px) {
+            right: 20px;
+        }
+        @media (max-width:576px) {
+            display: none;
+        }
+    }
+}
+// book apointment end 
+
+// medical lab section start 
+.medical-lab-area {
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        background-image: url(../images/medi-tab/01.jpg);
+        height: 760px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+
+}
+.medical-tabs {
+    justify-content: space-between;
+    border: none;
+    margin-bottom: 80px;
+    .medical-item {
+        .medi-tab-btn {
+            color: #495057;
+            border-color: transparent;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            padding: 52px 48px 30px 48px;
+            position: relative;
+            transition: all .3s ease;
+            .icon{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 80px;
+                width: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 41px;
+                border-radius: 50%;
+                background: $them-5;
+                transition: all .3s ease;
+                color: $white;
+                top: -40px;
+                border: 6px solid $white;
+            }
+            .title{
+                font-size: 22px;
+                font-weight: 700;
+                color: #333333;
+                transition: all .3s ease;
+            }        
+            &::after{
+                content: "";
+                position: absolute;
+                height: 50px;
+                width: 50px;
+                background: $white;
+                right: 50%;
+                transform: translateX(50%) rotate(45deg);
+                bottom: -25px;
+                transition: all .3s ease;
+            }
+            &:hover{
+                background: $them-5;
+                .icon{
+                    background: $them-1;
+                    color: $white;
+                }
+                .title{
+                    color: $white;
+                }
+                &::after{
+                    background: $them-5;
+                }
+            }
+        }
+    }
+}
+.medical-tab-content {
+    .single-content {
+        width: 100%;
+        background: $white;
+        display: flex;
+        .medi-tab-content {
+            flex-basis: 50%;
+            padding: 75px 45px;
+            .tab-title {
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 25px;
+                margin-bottom: 20px;
+                text-decoration: underline;
+                color: $font-color-1;
+            }
+            .tab-item-list{
+                li {
+                    font-size: 17px;
+                    line-height: 26px;
+                    color: $ash-font;
+                    margin-bottom: 15px;
+                }
+                .para1 {
+                    margin-bottom: 30px;
+                }
+                .para2 {
+                    margin-bottom: 50px;
+                    margin-top: 30px;
+                }
+                .chek-item {
+                    a{
+                        display: flex;
+                        align-items: center;
+                        transition: all .3s ease;
+                        color: $ash-font;
+                        .icon{
+                            margin-right: 15px;
+                        }
+                        &:hover{
+                            color: $them-1;
+                            text-decoration: underline;
+                            .icon{
+                                color: $them-1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .medi-tab-img {
+            padding: 10px 10px 10px 0;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+// medical lab section end 
 
 
 // appontment section start 
