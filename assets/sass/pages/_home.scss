@@ -887,3 +887,191 @@
         }
     }
 }
+
+//first home page end 
+
+
+// second home page start 
+
+.contact-us-area {
+    background-image: url(../images/contact/contact-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    @media (max-width: 1200px) {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgb(32, 50, 64, 0.89);
+        top: 0;
+        left: 0;
+        z-index: 1;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        @media (max-width: 1200px) {
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+    }
+    margin: 0 175px;
+    @media (max-width: 1600px) {
+        margin: 0 90px;
+    }
+    @media (max-width: 1500px) {
+        margin: 0 70px;
+    }
+    @media (max-width: 1400px) {
+        margin: 0 20px;
+    }
+    @media (max-width: 1200px) {
+        margin: 0 ;
+    }
+}
+
+.single-contact-input {
+    position: relative;
+    z-index: 11;
+    input{
+    height: 55px;
+    padding: 0 25px;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    color: #636363;
+    outline: none;
+    border: none;
+    display: block;
+    }
+}
+
+.single-service {
+    .service-bg {
+        background-image: url(../images/service/service01.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        height: 100%;
+        padding: 40px 30px;
+        text-align: center;
+        transition: all .3s ease;
+        border-radius: 20px;
+        position: relative;
+        @media (max-width: 1200px) and (min-width: 991px) {
+            padding: 20px;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            background: #f1f4fa;
+            border-radius: 20px;
+            transition: all .4s ease;
+            z-index: 11;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            width: calc(100% - 20px);
+            top: 10px;
+            left: 10px;
+            height: calc(100% - 20px);
+            background: transparent;
+            border-radius: 20px;
+            transition: all .4s ease;
+            z-index: 11;
+            border: 1px solid $ash-font;
+            border-style: dashed;
+        }
+        .icon {
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 31px;
+            background: $white;
+            border-radius: 50%;
+            margin: 0 auto;
+            transition: all .3s ease;
+            position: relative;
+            z-index: 111;
+        }
+        .service-title {
+            font-size: 22px;
+            line-height: 25px;
+            color: $font-color-1;
+            font-weight: 700;
+            margin: 25px 0 15px 0;
+            transition: all .3s ease;
+            position: relative;
+            z-index: 111;
+            @media (max-width: 1200px) and (min-width: 991px) {
+                font-size: 18px;
+            }
+        }
+        .service-info {
+            font-size: 16px;
+            line-height: 26px;
+            color: $ash-font;
+            margin-bottom: 20px;
+            transition: all .3s ease;
+            position: relative;
+            z-index: 111;
+            @media (max-width: 1200px) and (min-width: 991px) {
+                font-size: 14px;
+            }
+        }
+        .read-more {
+            font-size: 17px;
+            line-height: 26px;
+            font-weight: 500;
+            text-decoration: underline;
+            transition: all .3s ease;
+            position: relative;
+            z-index: 111;
+            color: $ash-font;
+            cursor: pointer;
+            @media (max-width: 1200px) and (min-width: 991px) {
+                font-size: 15px;
+            }
+        }
+        &:hover{
+            &::before{
+                background: rgb(8, 30, 65, 0.4);
+            }
+            &::after {
+                border: 1px solid $white;
+                border-style: dashed;
+            }
+            .icon {
+                background: $them-1;
+                color: $white
+            }
+            .service-title{
+                color: $white;
+            }
+            .service-info{
+                color: $white;
+            }
+            .read-more{
+                color: $white;
+            }
+        }
+    }
+}
+@media (max-width: 1200px) and (min-width: 991px) {
+    
+}

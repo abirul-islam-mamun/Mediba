@@ -124,3 +124,26 @@
          }
     }
 }
+//first hero section end
+
+
+//second hero seciton start 
+.hero-area-2 {
+    background-image: url(../images/hero/hero2.jpg);    
+}
+.hero-title {
+    margin-bottom: -13px;
+    display: flex;
+    align-items: center;
+    .icon {
+        font-size: 33px;
+        color: $them-1;
+        margin-right: 20px;
+    }
+    .hero-section-title {
+        color: $them-1;
+        font-weight: 500;
+        font-size: 19px;
+    }
+}
+//second hero seciton end 
