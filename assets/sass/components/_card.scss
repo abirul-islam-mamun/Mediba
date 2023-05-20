@@ -226,3 +226,191 @@
         }
     }
 }
+
+.active-docteam{
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -30px;
+        justify-content: center;
+        button {
+            font-size: 0px;
+            background: $them-5;
+            border: 2px solid $them-5;
+            border-radius: 50%;
+            margin: 0 5px;
+            transition: all .3s ease;
+            width: 25px;
+            height: 8px;
+            border-radius: 30px;
+        }
+        .slick-active {
+            button {
+                background: $them-1;
+                border: 2px solid $them-1;
+                width: 40px;
+            }
+        }
+    }
+}
+
+.active-docteam.slick-list {
+    margin: 0 -15px;
+}
+.single-docteam{
+    position: relative;
+    margin-bottom: 40px;
+    .team-img{
+        margin: 0 35px;
+        max-height: 370px;
+        height: 100%;
+        border: 5px solid $white;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        background: #dce6ee;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        z-index: 11;
+        @media (max-width: 1400px) {
+            max-height: 315px;
+        }
+        @media (max-width: 1200px) {
+            max-height: 250px;
+            margin: 0 25px;
+        }
+        @media (max-width: 768px) {
+            max-height: 200px;
+        }
+        @media (max-width: 560px) {
+            max-height: 350px;
+        }
+        @media (max-width: 430px) {
+            max-height: 250px;
+        }
+        img{
+            padding: 30px;
+            width: 100%;
+        }
+    }
+    .team-info {
+        width: 100%;
+        padding: 100px 30px 30px 30px;
+        background: $them-5;
+        margin-top: -75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        transition: all .3s ease;
+        @media (max-width: 1200px) {
+            padding: 90px 10px 30px 10px;
+        }
+        .name{
+            margin-left: 15px;
+            .doc-name {
+                color: $white;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 49px;
+                @media (max-width: 1200px) {
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+            }
+            .doc-post {
+                color: $white;
+                font-size: 17px;
+                @media (max-width: 1200px) {
+                    font-size: 15px;
+                }
+            }
+        }
+        .doc-social-add {
+            position: relative;
+            margin-right: 24px;
+            .add-social {
+                width: 47px;
+                height: 47px;
+                background: $them-1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+                font-size: 31px;
+                border-radius: 50%;
+                transition: all .3s ease;
+                @media (max-width: 1200px) {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .social-list {
+        position: absolute;
+        top: 30%;
+        right: 55px;
+        z-index: 111;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease;
+        @media (max-width: 1200px) {
+            top: 30%;
+            right: 40px;
+        }
+        li{
+            margin-bottom: 14px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            a{
+                width: 47px;
+                height: 47px;
+                background: $them-5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $white;
+                font-size: 17px;      
+                border-radius: 50%;   
+                transition: all .3s ease;
+                @media (max-width: 1200px) {
+                    font-size: 12px;
+                    height: 30px;
+                    width: 30px;
+                }
+                &:hover{
+                    background: $them-1;
+                }               
+            }
+        }
+    }
+    &:hover{
+        .team-info {
+            background: $them-1;
+        }
+        .doc-social-add{
+            .add-social {
+                background: $them-5;
+            }
+        }
+        .social-list{
+            visibility: visible;
+            opacity: 1;
+        }
+    } 
+}
+.single-docteam.slick-slide{
+    padding: 0 15px;
+    @media (max-width: 560px) {
+        padding: 0 50px;
+    }
+    @media (max-width: 445px) {
+        padding: 0 20px;
+    }
+}
+

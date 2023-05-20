@@ -287,6 +287,9 @@
     justify-content: space-between;
     border: none;
     margin-bottom: 80px;
+    @media (max-width: 768px) {
+       row-gap: 40px;
+    }
     .medical-item {
         .medi-tab-btn {
             color: #495057;
@@ -296,6 +299,18 @@
             padding: 52px 48px 30px 48px;
             position: relative;
             transition: all .3s ease;
+            @media (max-width: 1200px) {
+                padding: 45px 35px 35px;
+            }
+            @media (max-width: 991px) {
+                padding: 30px 15px 29px;
+            }
+            @media (max-width: 768px) {
+                padding: 45px 30px 30px;
+            }
+            @media (max-width: 525px) {
+                padding: 30px 15px 29px;
+            }
             .icon{
                 position: absolute;
                 left: 50%;
@@ -312,12 +327,26 @@
                 color: $white;
                 top: -40px;
                 border: 6px solid $white;
+                @media (max-width: 1200px) {
+                    height: 50px;
+                    width: 50px;
+                    font-size: 30px;
+                    border: 4px solid $white;
+                    top: -25px;
+                }
             }
             .title{
                 font-size: 22px;
                 font-weight: 700;
                 color: #333333;
                 transition: all .3s ease;
+                font-family: $base-font;
+                @media (max-width: 1200px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 1200px) {
+                    font-size: 18px;
+                }
             }        
             &::after{
                 content: "";
@@ -329,6 +358,9 @@
                 transform: translateX(50%) rotate(45deg);
                 bottom: -25px;
                 transition: all .3s ease;
+                @media (max-width: 768px) {
+                    display: none;
+                }
             }
             &:hover{
                 background: $them-5;
@@ -344,69 +376,310 @@
                 }
             }
         }
+        .medi-tab-btn.active {
+            background: $them-5;
+            .icon{
+                background: $them-1;
+                color: $white;
+            }
+            .title{
+                color: $white;
+            }
+            &::after{
+                background: $them-5;
+            }            
+        }
     }
 }
-.medical-tab-content {
-    .single-content {
-        width: 100%;
-        background: $white;
-        display: flex;
-        .medi-tab-content {
-            flex-basis: 50%;
-            padding: 75px 45px;
-            .tab-title {
-                font-size: 22px;
-                font-weight: 700;
-                line-height: 25px;
-                margin-bottom: 20px;
-                text-decoration: underline;
-                color: $font-color-1;
+.single-content {
+    width: 100%;
+    background: $white;
+    display: flex !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 79px 0px rgba(0, 0, 0, 0.08);
+    .medi-tab-content {
+        flex-basis: 50%;
+        padding: 75px 45px;
+        .tab-title {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 25px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            color: $font-color-1;
+        }
+        .tab-item-list{
+            li {
+                font-size: 17px;
+                line-height: 26px;
+                color: $ash-font;
+                margin-bottom: 15px;
             }
-            .tab-item-list{
-                li {
-                    font-size: 17px;
-                    line-height: 26px;
+            .para1 {
+                margin-bottom: 30px;
+            }
+            .para2 {
+                margin-bottom: 50px;
+                margin-top: 30px;
+            }
+            .chek-item {
+                a{
+                    display: flex;
+                    align-items: center;
+                    transition: all .3s ease;
                     color: $ash-font;
-                    margin-bottom: 15px;
-                }
-                .para1 {
-                    margin-bottom: 30px;
-                }
-                .para2 {
-                    margin-bottom: 50px;
-                    margin-top: 30px;
-                }
-                .chek-item {
-                    a{
-                        display: flex;
-                        align-items: center;
-                        transition: all .3s ease;
-                        color: $ash-font;
+                    .icon{
+                        margin-right: 15px;
+                    }
+                    &:hover{
+                        color: $them-1;
+                        text-decoration: underline;
                         .icon{
-                            margin-right: 15px;
-                        }
-                        &:hover{
                             color: $them-1;
-                            text-decoration: underline;
-                            .icon{
-                                color: $them-1;
-                            }
                         }
                     }
                 }
             }
         }
-        .medi-tab-img {
-            padding: 10px 10px 10px 0;
-            img{
-                width: 100%;
-                object-fit: cover;
-            }
+        @media (max-width: 991px) {
+            flex-basis: 100%;
+            padding: 45px;
+        }
+    }
+    .medi-tab-img {
+        padding: 10px 10px 10px 0;
+        flex-basis: 50%;
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+        @media (max-width: 991px) {
+            display: none;
         }
     }
 }
 // medical lab section end 
 
+
+// our best project or portfolio
+
+.masonary-btn-wrap {
+    .text {
+        color: $ash-font;
+        font-size: 17px;
+        line-height: 27px;
+        margin-bottom: 30px;
+    }
+    .category{
+        margin-bottom: 50px;
+        .category-item {
+            border-bottom: none;
+            li {
+                .nav-link{
+                    display: inline-block;
+                    font-size: 17px;
+                    color: #333333;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    padding: 7px 11px;
+                    transition: all .3s ease;
+                    border-radius: 0px;
+                    border: 1px solid transparent;
+                    font-family: $base-font;
+                    &:hover{
+                        color: $white;
+                        background: $them-1;                    
+                    }
+                    &:focus{
+                        border: 1px solid transparent;
+                    }
+                }
+                .nav-link.active{
+                    color: $white;
+                    background: $them-1;   
+                    border: 1px solid transparent;                   
+                }
+                @media (max-width: 440px) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+.category {
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-wrap {
+    padding: 0 120px;
+    @media (max-width: 1600px) {
+        padding: 0 120px;
+    }
+    @media (max-width: 1500px) {
+        padding: 0 90px;
+    }
+    @media (max-width: 1400px) {
+        padding: 0 40px;
+    }
+    @media (max-width: 1200px) {
+        padding: 0 30px;
+    }
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
+    @media (max-width: 576px) {
+        padding: 0 10px;
+    }
+    @media (max-width: 425px) {
+        padding: 0 5px;
+    }
+
+    .portfolio-single-card {
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+
+        .images {
+            img {
+                width: 100%;
+                @media (max-width: 991px)  {
+                    max-height: 400px;
+                    object-fit: cover;
+                }
+                @media (max-width:768px) {
+                    max-height: 550px;
+                }
+                @media (max-width:576px) {
+                    max-height: 400px;
+                }
+            }
+        }
+
+        .text {
+            position: absolute;
+            left: 0;
+            bottom: -100%;
+            border-top: 3px solid $white;
+            border-right: 3px solid $white;
+            border-top-right-radius: 50%;            
+            background-color: #203240;
+            opacity: 0.941;
+            padding: 47px 30px 30px 35px;
+            width: 100%;
+            transition: all .3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;              
+            @media (max-width: 1170px) and (min-width: 991px) {
+                padding: 30px;
+            } 
+
+            a {
+                border-radius: 50%;
+                background-color: $them-1;
+                border: 7px solid $white;
+                width: 70px;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                margin-bottom: 15px;
+                position: absolute;
+                right: 0;
+                top: 0px;
+                color: $white;
+                font-size: 25px;
+                @media (max-width: 1400px) {
+                    width: 60px;
+                    height: 60px;
+                    font-size: 20px;
+                    border: 4px solid $white
+                }               
+                @media (max-width: 1170px) and (min-width: 991px) {
+                    width: 50px;
+                    height: 50px;
+                } 
+            }
+            h3 {
+                font-size: 20px;
+                color: $white;
+                font-weight: 600;
+                margin-bottom: 5px;   
+                @media (max-width: 1400px) {
+                    font-size: 18px;
+                }             
+                @media (max-width: 1170px) and (min-width: 991px) {
+                    font-size: 15px;
+                }             
+            }
+            h2 {
+                font-size: 22px;
+                color: $white;
+                font-weight: 700;
+                margin-bottom: 10px; 
+                @media (max-width: 1400px) {
+                    font-size: 20px;
+                }              
+                @media (max-width: 1170px) and (min-width: 991px) {
+                    font-size: 17px;
+                } 
+            }
+
+            span {
+                font-size: 17px;
+                font-family: $heading-font;
+                color: $white;
+                @media (max-width: 1400px) {
+                    font-size: 16px;
+                }              
+                @media (max-width: 1170px) and (min-width: 991px) {
+                    font-size: 12px;
+                } 
+            }
+        }
+
+        &:hover {
+            .text {
+                bottom: 0;
+                opacity: 0.941;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+
+
+
+
+//brand section start 
+.brand-area {
+    h5 {
+        display: none;
+    }
+    .slick-dots {
+        display: none !important;
+    }
+}
+.brand-active {
+    // margin: 0 45px;
+    .brand-img {
+        text-align: center;
+        img {
+            margin: auto;
+            max-width: 200px;
+            width: 100%;
+            @media (max-width: 768px) {
+                max-width: 155px;
+            }
+        }
+    }
+}
+//brand section end 
 
 // appontment section start 
 .appoint-head {
