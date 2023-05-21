@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 175px;
+    position: relative;
     @media (max-width: 1600px) {
         padding: 0 120px;
     }
@@ -21,11 +22,30 @@
     @media (max-width: 576px) {
         padding: 0 10px;
     }
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url(../images/hero/menu-shape.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 630px;
+        @media (max-width: 1500px) {
+            width: 500px;
+            background-size: contain;
+        }
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
 }
 
 .topbar-left {
     display: flex;
     align-items: center;
+    position: relative;
     li{
         display: flex;
         align-items: center;
