@@ -108,39 +108,40 @@
             line-height: 20px;
         }
     }
-    .coment-review {
-        padding: 20px 30px;
-        border-top: 1px solid $border-2;
+}
+
+.coment-review {
+    padding: 20px 30px;
+    border-top: 1px solid $border-2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;            
+    .comment {
+        font-size: 16px;
+        color: $ash-font;
+        @media (max-width: 1200px) {
+            font-size: 12px;
+        }
+    }
+    .review-start {
         display: flex;
         align-items: center;
-        justify-content: space-between;            
-        .comment {
-            font-size: 16px;
+        li{
             color: $ash-font;
+            font-size: 16px;
+            margin-right: 6px;
+            &:last-child{
+                margin-right: 0;
+            }
             @media (max-width: 1200px) {
                 font-size: 12px;
             }
         }
-        .review-start {
-            display: flex;
-            align-items: center;
-            li{
-                color: $ash-font;
-                font-size: 16px;
-                margin-right: 6px;
-                &:last-child{
-                    margin-right: 0;
-                }
-                @media (max-width: 1200px) {
-                    font-size: 12px;
-                }
-            }
-            .review-count {
-                margin-left: 4px;
-            }
+        .review-count {
+            margin-left: 4px;
         }
-        
     }
+    
 }
 
 // medical service 

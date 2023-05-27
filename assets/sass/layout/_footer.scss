@@ -97,6 +97,10 @@
             line-height: 40px;
             color: $white;
             margin-bottom: 8px;
+            transition: all .3s ease;
+            &:hover{
+                color: $them-1;
+            }
             @media (max-width: 991px) {
                 font-size: 15px;
                 line-height: 25px;
@@ -159,3 +163,7 @@
         color: $white;
     }
 }
+// .footer-area-s2{
+//     position: relative;
+//     margin-top: -40px;
+// }
