@@ -53,43 +53,43 @@
             font-size: 15px;
         }
     }
-    .about-list{
-        margin-top: 90px;
-        li{
-            display: flex;
-            margin-bottom: 15px;
-            align-items: center;
-            .icon {
-                height: 30px;
-                max-width: 30px;
-                width: 100%;
-                line-height: 30px;
-                text-align: center;
-                color: $white;
-                border-radius: 50%;
-                display: inline-block;
-                background: $them-1;
-                transition: all .3s ease;
-                margin-right: 15px;
+}
+
+.about-list{
+    margin-top: 90px;
+    li{
+        display: flex;
+        margin-bottom: 15px;
+        align-items: center;
+        .icon {
+            height: 30px;
+            max-width: 30px;
+            width: 100%;
+            line-height: 30px;
+            text-align: center;
+            color: $white;
+            border-radius: 50%;
+            display: inline-block;
+            background: $them-1;
+            transition: all .3s ease;
+            margin-right: 15px;
+        }
+        .list-para{
+            font-size: 17px;
+            line-height: 26px;
+            color: $ash-font;
+            display: inline;
+            @media (max-width: 768px) {
+                font-size: 15px;
             }
-            .list-para{
-                font-size: 17px;
-                line-height: 26px;
-                color: $ash-font;
-                display: inline;
-                @media (max-width: 768px) {
-                    font-size: 15px;
-                }
-            }
-            &:hover{
-                .icon{
-                    background: $them-5;
-                }
+        }
+        &:hover{
+            .icon{
+                background: $them-5;
             }
         }
     }
 }
-
 //counter start 
 .single-count {
     background: #dce8ef;
@@ -111,6 +111,9 @@
     }
     @media (max-width: 991px) {
         padding: 20px 10px;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 30px;        
     }
     .counter-icon {
         height: 80px;

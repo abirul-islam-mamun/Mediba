@@ -1,13 +1,51 @@
-// single team card 
-.single-team {
+// blog area
+.blog-slider-active {
+    margin: 0 -15px;
+    .slick-slide{
+        margin: 0 15px;
+    }
+    .slick-dots {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -30px;
+        justify-content: center;
+        button {
+            font-size: 0px;
+            background: $them-5;
+            border: 2px solid $them-5;
+            border-radius: 50%;
+            margin: 0 5px;
+            transition: all .3s ease;
+            width: 25px;
+            height: 8px;
+            border-radius: 30px;
+        }
+        .slick-active {
+            button {
+                background: $them-1;
+                border: 2px solid $them-1;
+                width: 40px;
+            }
+        }
+    }
+} 
+
+.single-news {
     background: $them-bg-2;
     margin-bottom: 30px;
-    .team-img {
+    .news-img {
         position: relative;
         // margin-bottom: 30px;
-        a{img{
-            width: 100%;
-        }}
+        overflow: hidden;
+        a{
+            img{
+                width: 100%;
+                transition: all .3s ease;
+                transform: scale(1);
+            }
+        }
         .top-icon {
             position: absolute;
             top: 0;
@@ -26,7 +64,7 @@
                 transition: all .3s ease;
             }
         }
-        .team-category {
+        .news-category {
             position: absolute;
             display: flex;
             align-items: center;
@@ -62,12 +100,15 @@
             }
         }
         &:hover{
+            a {
+                img{transform: scale(1.1);}
+            }
             .top-icon {
                 a {
                     background: $them-5;
                 }
             }
-            .team-category{
+            .news-category{
                 .category{
                     background: $them-1;
                 }
@@ -76,8 +117,8 @@
     }    
 } 
 
-.team-info-details {
-    .team-title {
+.news-info-details {
+    .news-title {
         padding-top: 30px;
         a{
             font-size: 22px;
@@ -97,7 +138,7 @@
             }
         }
     }
-    .team-info {
+    .news-info {
         font-size: 17px;
         line-height: 26px;
         color: $ash-font;
@@ -197,6 +238,8 @@
             padding-top: 0;
             a{
                 padding: 0;
+                color: $font-color-1;
+                transition: all .3s ease;
             }
         }
         .team-info {
@@ -221,6 +264,9 @@
         }
         .medi-info-details{
             box-shadow: 0px 0px 14.76px 3.24px rgba(0, 0, 0, 0.18);
+            .team-title {
+                a{ color: $them-1;}
+            }
         }
         .service-more-btn {
             background: $them-1;
@@ -276,23 +322,23 @@
         position: relative;
         z-index: 11;
         @media (max-width: 1400px) {
-            max-height: 315px;
+           height: 315px;
         }
         @media (max-width: 1200px) {
             max-height: 250px;
             margin: 0 25px;
         }
         @media (max-width: 768px) {
-            max-height: 200px;
+            max-height: 270px;
         }
-        @media (max-width: 560px) {
+        @media (max-width: 576px) {
             max-height: 350px;
         }
         @media (max-width: 430px) {
-            max-height: 250px;
+            max-height: 260px;
         }
         img{
-            padding: 30px;
+            padding: 30px 30px 0 30px;
             width: 100%;
         }
     }

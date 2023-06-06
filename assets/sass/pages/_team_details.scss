@@ -1,0 +1,96 @@
+
+.member-img{
+    margin-bottom: 50px;
+    img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+}
+
+.membar-details-wrap{
+    .member-naem {
+        font-size: 22px;
+        font-weight: 700;
+        color: $content-color;
+    }
+    .position {
+        font-size: 17px;
+        color: $ash-font;
+        margin-bottom: 20px;
+    }
+    .description {
+        font-size: 17px;
+        color: $ash-font;
+        margin-bottom: 25px;
+    }
+}
+
+.member-info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin-bottom: 50px;
+    @media (max-width: 576px) {
+        justify-content: center;
+    }
+
+    .single-info{
+        height: 106px;
+        width: 235px;
+        border: 1px solid $border-ash;
+        padding: 40px 30px;
+        display: flex;
+        align-items: center;
+        margin-right: -1px;
+        margin-bottom: -1px;
+        margin-top: 0.5px;
+        .icon{
+            font-size: 26px;
+            color: $them-1;
+            margin-right: 15px;
+        }
+        .info-text {
+            .title-text{
+                font-size: 17px;
+                color: $content-color;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+            .subtitle-text{
+                font-size: 15px;
+                color: $ash-font;
+                
+            }
+        }
+    }
+}
+
+.member-hospital-list{
+    margin-top: 10px;
+    .hospital-option{
+        font-size: 17px;
+        color: $ash-font;
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 20px;
+        &::before{
+            position: absolute;
+            content: "";
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+            background: $them-1;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0px;
+        }
+    }
+}
+
+.scale-wrap-member{
+    margin-top: 10px;
+    width: 100%;
+}
