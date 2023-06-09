@@ -5,12 +5,18 @@
         line-height: 28px;
         color: $ash-font;
         margin-bottom: 30px;
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
     }
     .service-details-contact {
         padding: 40px 45px;
         margin-bottom: 40px;
         .service-details-info {
             margin-bottom: 15px;
+        }
+        @media (max-width: 1200px) {
+            padding: 25px;
         }
     }
     .about-list{
@@ -19,6 +25,14 @@
         margin-bottom: 40px;
         li{
             margin-bottom: 25px;
+        }
+        @media (max-width: 1200px) {
+            li{
+                .list-para{
+                    font-size: 15px;
+                    line-height: 21px;
+                }
+            }
         }
     }
 }
@@ -44,17 +58,33 @@
     margin-bottom: 50px;
     margin-right: 40px;
 
+    @media (max-width: 991px) {
+        margin-right: 0;
+    }
+    @media (max-width: 576px) {
+        padding: 30px 30px 60px 60px;
+    }
+
     .review-text {
         font-size: 17px;
         color: $ash-font;
         font-style: italic;
         margin-bottom: 25px;
+        @media (max-width:1025px) {
+            font-size: 15px;
+            line-height: 22px;
+        }
     }
 
     .reviewer-box {
         display: flex;
         align-items: center;    
     
+        @media (max-width: 425px) {
+            flex-direction: column;
+            row-gap: 20px;
+
+        }
         .reviewer-img {
             margin-right: 25px;
             img{
@@ -64,6 +94,28 @@
                 border: 2px solid $them-1;
                 object-fit: cover;
                 object-position: top;
+            }
+            @media (max-width: 1025px) {
+                margin-right: 20px;
+                img{
+                    height: 80px;
+                    width: 80px;
+                }
+            }
+            @media (max-width: 768px) {
+                flex-basis: 20%;
+                img{
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+            @media (max-width: 576px) {
+                flex-basis: 25%;
+                margin-right: 0px;
+                img{
+                    height: 50px;
+                    width: 50px;
+                }
             }
         }
         .reviewr-info {
@@ -76,6 +128,12 @@
                     color: $ash-font;
                     font-size: 17px;
                     font-weight: 400;
+                }
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                    .position{
+                        font-size: 15px;
+                    }
                 }
             }
             .reviewing-start{
@@ -96,6 +154,10 @@
         position: absolute;
         top: 43px;
         left: 44px;
+        @media (max-width: 576px) {
+            top: 20px;
+            left: 20px;
+        }
     }
 
     .down-quote {
@@ -113,6 +175,14 @@
         img{
             max-width: 50px;
         }
+        @media (max-width:1025px) {
+            width: 120px;
+            height: 120px;
+
+            img{
+                max-width: 40px;
+            }
+        }
     }
 }
 
@@ -126,24 +196,38 @@
     }
     .child-comment {
         padding-left: 50px;
+        @media (max-width: 576px) {
+            padding-left: 20px;
+        }
     }
 }
 .single-comment {
     padding: 40px 0  30px 110px;
     border-bottom: 1px solid $border-ash;
     position: relative;
+    @media (max-width: 576px) {
+        padding: 40px 0 30px 90px;
+    }
 
     .comment-img {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         left: 0;
+        @media (max-width: 576px) {
+            top: 40px;
+            transform: unset;
+        }
         img{
             width: 90px;
             width: 90px;
             border-radius: 50%;
             object-fit: cover;
             object-position: top;
+            @media (max-width: 576px) {
+                width: 60px;
+                height: 60px;
+            }
         }
     }
     .comment-details {
@@ -152,6 +236,9 @@
             font-size: 22px;
             font-weight: 700;
             margin-bottom: 10px;
+            @media (max-width: 576px) {
+                font-size: 18px;
+            }
         }
         .comments {
             font-size: 15px;
@@ -168,6 +255,11 @@
                 color: $them-1;
                 display: inline-block;
                 cursor: pointer;
+                @media (max-width: 576px) {
+                    display: block;
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
             }
         }
     }
@@ -180,6 +272,9 @@
         color: #222222;
         font-weight: 700;
         margin-bottom: 30px;
+        @media (max-width: 576px) {
+            font-size: 30px;
+        }
     }
     input{
         height: 67px;
@@ -252,6 +347,9 @@
     border-radius: 30px;
     position: relative;
     margin-bottom: 60px;
+    @media (max-width:1200px) {
+        padding: 30px 40px;
+    }
 
     .blog-service-content {
         position: relative;

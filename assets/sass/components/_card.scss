@@ -1,4 +1,7 @@
 // blog area
+.blog-area.first-page-blog{
+    margin-bottom: 50px;
+}
 .blog-slider-active {
     margin: 0 -15px;
     .slick-slide{
@@ -31,6 +34,7 @@
         }
     }
 } 
+
 
 .single-news {
     background: $them-bg-2;
@@ -168,7 +172,7 @@
         display: flex;
         align-items: center;
         li{
-            color: $ash-font;
+            color: $them-1;
             font-size: 16px;
             margin-right: 6px;
             &:last-child{
@@ -177,6 +181,9 @@
             @media (max-width: 1200px) {
                 font-size: 12px;
             }
+            &:nth-last-child(-n + 3) {
+                color: $ash-font;
+            }
         }
         .review-count {
             margin-left: 4px;
@@ -184,6 +191,7 @@
     }
     
 }
+
 
 // medical service 
  
@@ -275,12 +283,13 @@
 }
 
 .active-docteam{
+    margin-bottom: 50px;
     .slick-dots {
         display: flex;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: -30px;
+        bottom: -20px;
         justify-content: center;
         button {
             font-size: 0px;
@@ -378,6 +387,9 @@
         .doc-social-add {
             position: relative;
             margin-right: 24px;
+            @media (max-width: 1200px) {
+                margin-right: 35px;
+            }
             .add-social {
                 width: 47px;
                 height: 47px;
@@ -400,14 +412,14 @@
     .social-list {
         position: absolute;
         top: 30%;
-        right: 55px;
+        right: 70px;
         z-index: 111;
         visibility: hidden;
         opacity: 0;
         transition: all .3s ease;
         @media (max-width: 1200px) {
-            top: 30%;
-            right: 40px;
+            top: 33%;
+            right: 60px;
         }
         li{
             margin-bottom: 14px;

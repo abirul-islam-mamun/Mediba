@@ -660,6 +660,9 @@
 
 
 //brand section start 
+.brand-area.first-brand.second-page-brand {
+    padding: 70px 0 80px;
+}
 .brand-area {
     h5 {
         display: none;
@@ -669,7 +672,6 @@
     }
 }
 .brand-active {
-    // margin: 0 45px;
     .brand-img {
         text-align: center;
         img {
@@ -866,6 +868,8 @@
         border: none;
         outline: none;
         padding: 0 45px;
+        font-size: 17px;
+        font-weight: 400;
         @media (max-width: 425px) {
            height: 60px;
            font-size: 14px;

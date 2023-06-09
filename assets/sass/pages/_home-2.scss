@@ -656,8 +656,45 @@
 // second booking section end 
 
 // choose service seciton start 
+.choose-service-area {
+    position: relative;
+    overflow: hidden;
+    .doc-shape {
+        position: absolute;
+        bottom: 0;
+        right: 60px;
+        img{
+            max-width: 885px;
+        }
+        @media (max-width: 1700px) {
+            right: 40px;
+            img{
+                max-width: 750px;
+            }
+        }
+        @media (max-width: 1400px) {
+            right: -40px;
+        }
+        @media (max-width: 1200px) {
+            right: -100px;
+            img{
+                max-width: 700px;
+            }
+        }
+        @media (max-width: 1100px) {
+            right: -130px;
+            img {
+                max-width: 650px;
+            }
+        }
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
 .choose-content {
     margin-top: -30px;
+    position: relative;
     .choose-descrption {
         font-size: 17px;
         color: $ash-font;
@@ -689,6 +726,9 @@
             width: 100%;
         }
     }
+    @media (max-width: 1200px) {
+        padding: 25px 25px;
+    }
     @media (max-width: 576px) {
         padding: 25px 20px;
     }
@@ -708,6 +748,14 @@
         img{
             max-width: 45px;
         }
+        @media (max-width: 1200px) {
+            width: 70px;
+            height: 70px;
+            left: 15px;
+            img{
+                max-width: 35px;
+            }
+        }
         @media (max-width: 576px) {
             width: 70px;
             height: 70px;
@@ -719,6 +767,12 @@
     }
     .choose-info {
         padding-left: 120px;
+        @media (max-width: 1200px) {
+           padding-left: 70px;
+        }
+        @media (max-width: 991px) {
+           padding-left: 90px;
+        }
         @media (max-width: 576px) {
            padding-left: 80px;
         }
@@ -728,6 +782,9 @@
             color: $font-color-1;
             font-weight: 700;
             margin-bottom: 15px;
+            @media (max-width: 1200px) {
+                font-size: 18px;
+            }
         }
         .choose-title.color-white{
             color: $white;
@@ -736,6 +793,10 @@
             font-size: 17px;
             columns: $ash-font;
             line-height: 28px;
+            @media (max-width: 1200px) {
+                font-size: 15px;
+                line-height: 23px;
+            }
         }
     }
 
@@ -754,6 +815,7 @@
             color: #151616;
             text-align: center;
             border-right: 1px solid transparent;
+            transition: all .3s ease;
             &:last-child{
                 border-right: 1px solid #ededed;
             }
@@ -1283,7 +1345,7 @@
             }
         }
     }
-    @media (max-width: 1200px) {
+    @media (max-width: 991px) {
         .side-text{
             display: none;
         }
@@ -1410,8 +1472,22 @@
 
 // brand area 
 .brand-area.second-page-brand{
-    padding: 100px 0;
+    padding: 100px 80px;
     border-bottom: 1px solid #dddddd;
+
+    @media (max-width: 1600px) {
+        padding: 100px 90px;
+    }
+    @media (max-width: 1500px) {        
+        padding: 100px 80px;
+    }
+    @media (max-width: 1400px) {
+        padding: 100px 20px;
+    }
+    @media (max-width: 1200px) {
+        padding: 100px 0px;
+    }
+    
 }
 
 // blog area start 
