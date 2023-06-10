@@ -504,7 +504,6 @@
         color: $white;
         font-size: 17px;
         font-weight: 500;
-        // margin-bottom: 20px;
     }
     @media (max-width: 991px) {
         margin-bottom: 50px;            
@@ -650,6 +649,11 @@
         }
         .list{
             width: 100%;
+        }
+    }
+    .appoint-btn{
+        &::before{
+            left: 30%;
         }
     }
 }
@@ -1046,10 +1050,15 @@
             border-bottom: 1px solid #dddddd;
             position: relative;
             .doc-name {
-                font-size: 22px;
-                color: #333333;
-                margin-bottom: 8px;
-                font-weight: 700;
+                a{
+                    font-size: 22px;
+                    color: #333333;
+                    margin-bottom: 8px;
+                    font-weight: 700;
+                    @media (max-width:768px) {
+                        font-size: 19px;
+                    }
+                }
             }
             .sector {
                 font-size: 17px;

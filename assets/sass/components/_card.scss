@@ -367,13 +367,15 @@
         .name{
             margin-left: 15px;
             .doc-name {
-                color: $white;
-                font-size: 22px;
-                font-weight: 700;
-                line-height: 49px;
-                @media (max-width: 1200px) {
-                    font-size: 18px;
-                    line-height: 30px;
+                a{
+                    color: $white;
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 49px;
+                    @media (max-width: 1200px) {
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
                 }
             }
             .doc-post {

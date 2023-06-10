@@ -1479,8 +1479,8 @@
 .header-site-s2.header-site-common{
 	#navbar{
 		.navbar-nav{
-			li{
-				a{
+			>li{
+				>a{
 					color: $white;
 				}
 			}

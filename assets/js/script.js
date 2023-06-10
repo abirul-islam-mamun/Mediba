@@ -610,6 +610,32 @@ $(function () {
       });
   }
 
+// project isotop filtering 
+// init Isotope
+var $grid = $(".project-grid").isotope({
+  itemSelector: '.grid-item',
+  // layoutMode: 'fitRows'
+});
 
+// sort items on button click
+$('.filter-button-group').on( 'click', '.nav-link', function() {
+  $(".filter-button-group .nav-link").removeClass('active')
+  $(this).addClass('active')
+var sortByValue = $(this).attr('data-filter');
+$grid.isotope({
+  filter:sortByValue
+})
+});
+
+// wow js 
+new WOW().init();
+
+
+// video popup
+$(function() {
+  $('.popup-vido-s1').magnificPopup({
+      type: 'iframe',
+  });
+});
 
 })
