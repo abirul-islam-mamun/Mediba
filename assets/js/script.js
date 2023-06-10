@@ -201,6 +201,7 @@ $(function () {
     verticalSwiping: true,
     nextArrow: "<button class='slick-prev pull-right'><i class='icofont-arrow-right'></i></button>",
     prevArrow: "<button class='slick-prev pull-left'><i class='icofont-arrow-left'></i></button>",
+
   });
 
 

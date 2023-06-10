@@ -33,6 +33,24 @@
             font-size: 15px;
         }
     }
+
+    .footer-shape {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 11;
+        img{
+            max-width: 125px;
+        }
+        @media (max-width:1600px) {
+            img{
+                max-width: 100px;
+            }
+        }
+        @media (max-width:1550px) {
+            display: none;
+        }
+    }
 }
 .footer-top {
     position: relative;

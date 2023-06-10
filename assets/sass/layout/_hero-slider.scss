@@ -241,16 +241,7 @@
 .hero-area-s3 {
     padding: 0 135px;
 
-    @media (max-width:1600px) {
-        padding: 0 100px;
-    }
-    @media (max-width:1500px) {
-        padding: 0 70px;
-    }
-    @media (max-width:1400px) {
-        padding: 0 30px;
-    }
-    @media (max-width:1300px) {
+    @media (max-width:1700px) {
         padding: 0 0px;
     }
     .hero-s3-wrapper{
@@ -272,15 +263,44 @@
                 color: $white;
                 background: $them-1;
             }
+            @media (max-width:1700px) {
+                right: 50%;
+                transform: rotate(0deg);
+                height: 50px;
+                line-height: 50px;
+                width: 50px;
+                font-size: 30px;
+                background: $them-1;
+                color: $white;
+                &:hover{
+                    color: $them-1;
+                    background: $white;
+                }
+            }
         }
         .pull-left.slick-arrow{
             top: calc(50% - 99px);
+            @media (max-width:1700px) {
+                top: unset;
+                bottom: 0;
+                right: unset;
+                left: calc(50% - 60px);
+            }
         }
         .pull-right.slick-arrow{
             bottom: calc(50% - 99px);
+            @media (max-width:1700px) {
+                bottom: 0;
+                right: calc(50% - 60px);
+            }
         }
         .single-slider.slick-slide{
             border: none;
+        }
+        @media (max-width:1700px) {
+            .single-slider {
+                width: 100% !important;
+            }
         }
     }
 }
@@ -310,6 +330,28 @@
         bottom: -1px;
         right: 120px;
         z-index: 1111;
+        img{
+            max-height: 665px;
+            max-width: 515px;
+        }
+        @media (max-width: 1585px) {
+            right: 180px;
+            img{
+                max-width: 480px;
+            }
+        }
+        @media (max-width:1400px) {
+            right: 80px;
+        }
+        @media (max-width:1200px) {
+            right: 50px;
+        }
+        @media (max-width:991px) {
+            right: 10px;
+        }
+        @media (max-width:768px) {
+            display: none;
+        }
     }
 }
 .hero-s3-content{

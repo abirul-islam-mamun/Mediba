@@ -29,12 +29,20 @@
             font-weight: 700;
             margin-bottom: 15px;
             transition: all .3s ease;
+            @media (max-width:768px) {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
         }
         .subtitle {
             font-size: 17px;
             color: $ash-font;
             line-height: 26px;
             transition: all .3s ease;
+            @media (max-width:768px) {
+                font-size: 15px;
+                line-height: 22px;
+            }
         }
     }
     &::after{
@@ -291,6 +299,7 @@
     background-size: cover;
     position: relative;
     z-index: 1;
+    overflow: hidden;
     &::before{
         content: "";
         position: absolute;
@@ -313,6 +322,27 @@
             .counter-icon {
                 background: $them-5;
             }
+        }
+    }
+    .lineshape-1{
+        position: absolute;
+        bottom: -10px;
+        left: -30px;
+        z-index: 11;
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+    .lineshape-2{
+        position: absolute;
+        bottom: -10px;
+        right: 30px;
+        z-index: 11;
+        @media (max-width:1600px) {
+            right: 0;
+        }
+        @media (max-width: 1200px) {
+            display: none;
         }
     }
 }
@@ -1170,6 +1200,9 @@
         transition: all .3s ease;
         &:last-child{
             margin-left: -35px;
+            @media (max-width:576px) {
+                margin-left: 0;
+            }
         }
         &:hover{
             background: $them-1;

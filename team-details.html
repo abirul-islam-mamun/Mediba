@@ -20,85 +20,144 @@
 </head>
 <body>
 
-<!-- Start header -->
-<header class="header-area">
-    <div class="header-topbar">
-        <ul class="topbar-left">
-            <li><span class="icon"><i class="icofont-envelope"></i></span> support@gmail.com  </li>
-            <li><span class="icon"><i class="icofont-wall-clock"></i></span> Sun - Fri:6.00am - 02.00pm  </li>
-        </ul>
-        <div class="topbar-select">
-            <span class="flag-img"><img src="assets/images/flag01.png" alt="img"></span>
-            <select class="language-selector">
-                <option value="eng">English</option>
-                <option value="china">简体中文</option>
-                <option value="arb">العربيّة</option>
-            </select>
+    <!-- Start header -->
+    <header id="header">
+        <div class="wpo-site-header header-site-s2 header-site-common">
+            <nav class="navigation navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                            <div class="mobail-menu">
+                                <button type="button" class="navbar-toggler open-btn">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar first-angle"></span>
+                                    <span class="icon-bar middle-angle"></span>
+                                    <span class="icon-bar last-angle"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-6">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="index.html"><img src="assets/images/footer-logo.png"
+                                        alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-1 col-1">
+                            <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                <button class="menu-close"><i class="icofont-close"></i></button>
+                                <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                    <li class="menu-item-has-children">
+                                        <a class="active" href="javascript:void(0)">Home+</a>
+                                        <ul class="sub-menu">
+                                            <li><a class="active" href="index.html">Home style 1</a></li>
+                                            <li><a href="index-2.html">Home style 2</a></li>
+                                            <li><a href="index-3.html">Home style 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Pages+</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Page 1</a></li>
+                                            <li><a href="#">Page 2</a></li>
+                                            <li><a href="#">Page 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Service+</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Service 1</a></li>
+                                            <li><a href="#">Service 2</a></li>
+                                            <li><a href="#">Service 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Project+</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Project 1</a></li>
+                                            <li><a href="#">Project 2</a></li>
+                                            <li><a href="#">Project 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="#">Blog+</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog.html">Blog Single</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div><!-- end of nav-collapse -->
+                        </div>
+                        <div class="col-lg-3 col-md-2 col-2">
+                            <div class="header-right">
+                                <div class="header-search-form-wrapper">
+                                    <div class="cart-search-contact">
+                                        <button class="search-toggle-btn"><i class="icofont-search-1"></i></button>
+                                        <div class="header-search-form">
+                                            <form>
+                                                <div>
+                                                    <input type="text" class="form-control"
+                                                        placeholder="Search here...">
+                                                    <button type="submit"><i class="fi flaticon-loupe"></i></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mini-cart">
+                                    <button class="cart-toggle-btn"> <i class="icofont-cart"></i> <span
+                                            class="cart-count">02</span></button>
+                                    <div class="mini-cart-content">
+                                        <button class="mini-cart-close"><i class="icofont-close"></i></button>
+                                        <div class="mini-cart-items">
+                                            <div class="mini-cart-item clearfix">
+                                                <div class="mini-cart-item-image">
+                                                    <a href="#">
+                                                        <img src="./assets/images/blog/post01.jpg" alt>
+                                                    </a>
+                                                </div>
+                                                <div class="mini-cart-item-des">
+                                                    <a href="#">X-Ray Services</a>
+                                                    <span class="mini-cart-item-price">$20.15 x 1</span>
+                                                    <span class="mini-cart-item-quantity"><a href="#"><i
+                                                                class="icofont-close"></i></a></span>
+                                                </div>
+                                            </div>
+                                            <div class="mini-cart-item clearfix">
+                                                <div class="mini-cart-item-image">
+                                                    <a href="#"><img
+                                                            src="./assets/images/blog/post02.jpg" alt></a>
+                                                </div>
+                                                <div class="mini-cart-item-des">
+                                                    <a href="#">Blood Draw Services</a>
+                                                    <span class="mini-cart-item-price">$13.25 x 2</span>
+                                                    <span class="mini-cart-item-quantity"><a href="#"><i
+                                                                class="icofont-close"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mini-cart-action clearfix">
+                                            <span class="mini-checkout-price">Subtotal: <span>$215.14</span></span>
+                                            <div class="mini-btn">
+                                                <a href="checkout.html" class="view-cart-btn s1">Checkout</a>
+                                                <a href="cart.html" class="view-cart-btn">View Cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="close-form">
+                                    <a href="#" class="theme-btn theme-btn2">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end of container -->
+            </nav>
         </div>
-    </div>
-    <div class="menu-area">
-        <div class="logo">
-            <a href="index.html"><img src="assets/images/logo.png" alt="Logo"></a>
-        </div>
-        <div class="menu-wrap">
-            <div class="menu-section">                            
-                <div class="responsive-menu">
-                    <ul class="menu">
-                        <li><a href="javascript:void(0)">Home+</a>
-                            <ul class="submenu">
-                                <li><a href="index.html">Home-1</a></li>
-                                <li><a href="index-2.html">Home-2</a></li>
-                                <li><a href="#">Home-3</a></li>                                            
-                            </ul>
-                        </li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="javascript:void(0)">Pages+</a>
-                            <ul class="submenu">
-                                <li><a href="#">Page-1</a></li>
-                                <li><a href="#">Page-2</a></li>
-                                <li><a href="#">Page-3</a></li>                                            
-                            </ul>
-                        </li>
-                        <li><a href="javascript:void(0)">Service+</a>
-                            <ul class="submenu">
-                                <li><a href="#">Service-1</a></li>
-                                <li><a href="#">Service-2</a></li>
-                                <li><a href="#">Service-3</a></li>                                            
-                            </ul>
-                        </li>
-                        <li><a href="about.html">Project+</a>
-                            <ul class="submenu">
-                                <li><a href="#">Project-1</a></li>
-                                <li><a href="#">Project-2</a></li>
-                                <li><a href="#">Project-3</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="javascript:void(0)">Blog+</a>
-                            <ul class="submenu">
-                                <li><a href="#">Blog Post-1</a></li>
-                                <li><a href="#">Blog Post-2</a></li>
-                                <li><a href="#">Blog Post-3</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="menu-left">
-                <ul class="menu-search">
-                    <li><span class="icon search"><i class="icofont-search-1"></i></span>
-                    </li>
-                    <li><span class="icon cart"><i class="icofont-cart"></i>
-                        <span class="shopping-count">02</span>
-                    </span></li>
-                </ul>
-                <a href="#" class="theme-btn theme-btn2">Contact Us</a>
-            </div>
-            <a href="javascript:void(0)" class="mobile-btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
-        </div>
-    </div>
-</header>
-<!-- end of header -->
+    </header>
+    <!-- end of header -->
 
 <!-- common hero section start -->
 <section class="common-hero-area">
@@ -492,6 +551,9 @@
                 <li><a href="#">Privacy & Policy</a></li>
             </ul>
         </div>            
+    </div>
+    <div class="footer-shape">
+        <img src="./assets/images/footer-shape.png" alt="shape">
     </div>
 </footer>
 <!-- footer section end  -->
