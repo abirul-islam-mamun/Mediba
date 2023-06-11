@@ -212,10 +212,11 @@
             visibility: hidden;
             opacity: 0;    
         }
-        // a{
-        //     display: block;
-        //     position: relative;
-        // }
+        a {
+            img{
+                width: 100%;
+            }
+        }
         .medi-service-icon {
             position: absolute;
             bottom: 0;

@@ -1726,6 +1726,9 @@
         @media (max-width: 576px) {
             padding: 20px;           
         }
+        @media (max-width: 480px) {
+            padding: 20px 0;           
+        }
         .container{
             .row{
                 display: flex;

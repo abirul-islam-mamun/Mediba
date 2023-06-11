@@ -420,6 +420,7 @@
         position: relative;
         z-index: 111;
         text-align: center;
+        margin-top: 60px;
         .head-title {
             font-size: 67px;
             line-height: 91px;
@@ -437,6 +438,10 @@
             @media (max-width:767px) {
                 font-size: 35px;
                 line-height: 45px;
+            }
+            @media (max-width:576px) {
+                font-size: 30px;
+                line-height: 40px;
             }
         }
         .camp-link {
