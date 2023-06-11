@@ -1,4 +1,9 @@
+/*--------------------------------------------------------------
+2. header
+--------------------------------------------------------------*/
 
+
+/*-- 2.1 topbar --*/
 .header-topbar {
     background: $them-5;
     display: flex;
@@ -90,6 +95,9 @@
                 height: 20px;
             }
         }
+		@media (max-width: 350px) {
+			display: none;
+		}
     }
     .language-selector {
         border: none;

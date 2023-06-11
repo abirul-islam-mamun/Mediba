@@ -293,6 +293,11 @@
     @media (max-width: 768px) {
        row-gap: 40px;
     }
+    @media (max-width: 576px) {
+        justify-content: center;
+        column-gap: 10px;
+        margin-top: 10px;
+    }
     .medical-item {
         .medi-tab-btn {
             color: #495057;
@@ -503,8 +508,11 @@
             background: $them-1;   
             border: 1px solid transparent;                   
         }
-        @media (max-width: 440px) {
+        @media (max-width: 576px) {
             margin-bottom: 15px;
+            flex-wrap: wrap;
+            row-gap: 10px;
+            justify-content: center;
         }
     }
 }

@@ -197,6 +197,7 @@
  
 .medical-service {
     background: transparent;
+    margin-bottom: 30px;
     .team-img {
         position: relative;
         &::before{
@@ -248,10 +249,16 @@
                 padding: 0;
                 color: $font-color-1;
                 transition: all .3s ease;
+                margin-bottom: 10px;
+                display: block;
             }
         }
         .team-info {
             padding: 0;
+            font-size: 17px;
+            line-height: 26px;
+            color: #636363;
+            margin-bottom: 25px;
         }
     }
     &:hover{

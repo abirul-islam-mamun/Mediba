@@ -82,6 +82,11 @@
         }
     }
 }
+.service-third-single.for-margin-none{
+    @media (max-width:991px) {
+        margin-bottom: 0;
+    }
+}
 //third service section end 
 
 //third about section start 

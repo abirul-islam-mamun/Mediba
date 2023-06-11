@@ -1,5 +1,12 @@
+/*--------------------------------------------------------------
+3. content
+--------------------------------------------------------------*/
 
-// first hero seciton 
+/* 3.1 hero-slider */
+
+/************************************************
+  hero-style-1
+**************************************************/
 .first-hero, .slide-s2 {
     background-image: url(../images/hero/hero01.jpg);
     height: 890px;
@@ -135,7 +142,9 @@
 //first hero section end
 
 
-//second hero seciton start 
+/************************************************
+  hero-style-2
+**************************************************/
 .hero-content-s2{
     position: relative;
     z-index: 111;
@@ -237,7 +246,9 @@
 
 //second hero seciton end 
 
-//third page hero section start 
+/************************************************
+  hero-style-3
+**************************************************/
 .hero-area-s3 {
     padding: 0 135px;
 
@@ -367,10 +378,11 @@
         color: $white;
     }
 }
-
 //third page hero section end 
 
-//common hero section start 
+/************************************************
+  common hero
+**************************************************/
 .common-hero-area {
     background-image: url(../images/hero/herobg02.jpg);
     background-position: center;
