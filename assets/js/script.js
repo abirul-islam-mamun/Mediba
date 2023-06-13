@@ -637,4 +637,17 @@ $(document).ready(function() {
   });
 });
 
+//choose more section image upper click plust and show the name box
+$(document).on('click','.plus-iocn',function(){
+  const docName = $(this).data('name');
+  const docTitle = $(this).data('position')
+  $('#doc_name').text(docName)
+  $("#doc_position").text(docTitle)
+  
+  $(".plus-iocn").removeClass("active");
+  $(this).addClass("active")
+})
+
+
+
 })
