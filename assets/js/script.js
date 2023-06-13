@@ -67,9 +67,6 @@ $(function () {
   });
 
 
-
-
-
   /*------------------------------------------
       = STICKY HEADER
   -------------------------------------------*/
@@ -167,30 +164,30 @@ $(function () {
   });
 
   // hero slider for homepage-02
-  $(function() { 
-  // Card's slider
-  var $carousel = $('.main-slider');
+  // $(function() { 
+  // // Card's slider
+  // var $carousel = $('.main-slider');
 
-  $carousel
-      .slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      adaptiveHeight: true,
-      asNavFor: '.slider-thumb'
-      })
+  // $carousel
+  //     .slick({
+  //     slidesToShow: 1,
+  //     slidesToScroll: 1,
+  //     arrows: false,
+  //     fade: true,
+  //     adaptiveHeight: true,
+  //     asNavFor: '.slider-thumb'
+  //     })
       
-  $('.slider-thumb').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: '.main-slider',
-      dots: false,
-      centerMode: false,
-      focusOnSelect: true,
-      variableWidth: true
-  });
-  });
+  // $('.slider-thumb').slick({
+  //     slidesToShow: 4,
+  //     slidesToScroll: 1,
+  //     asNavFor: '.main-slider',
+  //     dots: false,
+  //     centerMode: false,
+  //     focusOnSelect: true,
+  //     variableWidth: true
+  // });
+  // });
 
   // hero slider for homepage-03
   $('.hero-s3-wrapper').slick({
@@ -305,8 +302,10 @@ $(function () {
   $('.second-team-active').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    centerMode: true,
     arrows: false,
     dots: true,
+    infinite: true,
     responsive: [
       // {
       //   breakpoint: 1024,
@@ -539,7 +538,7 @@ $(function () {
     dots: true,
     responsive: [
       {
-        breakpoint: 14410,
+        breakpoint: 1410,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -632,9 +631,9 @@ new WOW().init();
 
 
 // video popup
-$(function() {
-  $('.popup-vido-s1').magnificPopup({
-      type: 'iframe',
+$(document).ready(function() {
+	$('.video-btn').magnificPopup({
+    type: 'iframe'
   });
 });
 

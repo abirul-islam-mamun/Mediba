@@ -82,6 +82,25 @@
         }
     }
 }
+.service-third-single.active{
+    background: $them-1;
+        .icon {
+            background: #e6eff4;
+            color: $them-1;
+        }
+        .information{
+            .title {
+                color: $white;
+            }
+            .subtitle {
+                color: $white;
+            }
+        }
+        &::after{
+            visibility: visible;
+            opacity: 1;
+        }
+}
 .service-third-single.for-margin-none{
     @media (max-width:991px) {
         margin-bottom: 0;

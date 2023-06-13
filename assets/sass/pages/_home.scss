@@ -54,7 +54,6 @@
         }
     }
 }
-
 .about-list{
     margin-top: 90px;
     li{
@@ -73,6 +72,9 @@
             background: $them-1;
             transition: all .3s ease;
             margin-right: 15px;
+            i{
+                margin-left: 2px;
+            }
         }
         .list-para{
             font-size: 17px;
@@ -91,6 +93,9 @@
     }
 }
 //counter start 
+.first-page-counter{
+    padding-bottom: 70px;
+}
 .single-count {
     background: #dce8ef;
     padding: 25px 20px;
@@ -111,9 +116,6 @@
     }
     @media (max-width: 991px) {
         padding: 20px 10px;
-    }
-    @media (max-width: 768px) {
-        margin-bottom: 30px;        
     }
     .counter-icon {
         height: 80px;
@@ -180,6 +182,8 @@
     }
 }
 //counter end 
+
+
 // book apointment start 
 .book-appoint-area {
     background-image: url(../images/book/book.jpg);
@@ -687,6 +691,12 @@
             margin: auto;
             max-width: 200px;
             width: 100%;
+            transition: all .3s ease;
+            filter: grayscale(1);
+            cursor: pointer;
+            &:hover{
+                filter: grayscale(0);
+            }
             @media (max-width: 768px) {
                 max-width: 155px;
             }

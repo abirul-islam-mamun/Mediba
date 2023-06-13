@@ -185,66 +185,13 @@
                     </div>
                 </div>
             </div>
-            <div class="slide-s2" style="background-image: url(./assets/images/hero/hero-s2-02.jpg)">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero-first-content hero-content-s2">                    
-                                <div class="hero-title">
-                                    <span class="icon"><i class="icofont-first-aid"></i></span>
-                                    <p class="hero-section-title">Wellcome to Medical !</p>                     
-                                </div>
-                                <h2 class="title">Helping You
-                                Medical Doctor.</h2>
-                                <p class="subtitle">Medical to eu nibh vitae est tempor molestie id sed exthe medical dignissim.</p>
-                                <div class="hero-btn-div">
-                                    <a class="theme-btn hero-btn" href="#">Our Service</a>
-                                    <a class="theme-btn" href="#">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-s2" style="background-image: url(./assets/images/hero/hero-s2-03.jpg)">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero-first-content hero-content-s2">                    
-                                <div class="hero-title">
-                                    <span class="icon"><i class="icofont-first-aid"></i></span>
-                                    <p class="hero-section-title">Wellcome to Medical !</p>                     
-                                </div>
-                                <h2 class="title">Helping You
-                                Medical Doctor.</h2>
-                                <p class="subtitle">Medical to eu nibh vitae est tempor molestie id sed exthe medical dignissim maximus ipsum metus ipsum.</p>
-                                <div class="hero-btn-div">
-                                    <a class="theme-btn hero-btn" href="#">Our Service</a>
-                                    <a class="theme-btn" href="#">Explore More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slider-thumb">
-            <div class="slide-s2-thumb">
-                <img src="./assets/images/hero/hero2.jpg" alt="img">
-            </div>
-            <div class="slide-s2-thumb">
-                <img src="./assets/images/hero/hero-s2-02.jpg" alt="img">
-            </div>
-            <div class="slide-s2-thumb">
-                <img src="./assets/images/hero/hero-s2-03.jpg" alt="img">
-            </div>
         </div>
     </div>  
 </section>
 <!-- hero area-2 end -->
 
 <!-- contact us fild section start -->
-<section class="contact-us-area section-padding">
+<div class="contact-us-area section-padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-12 mb-30">
@@ -264,12 +211,12 @@
             </div>
             <div class="col-lg-3 col-md-6 col-12 mb-30">
                 <div class="single-contact-input">
-                    <button type="submit" class="theme-btn theme-btn2 w-100">Contact Us</button>
+                    <button type="submit" class="theme-btn theme-btn2 contact-input-btn w-100">Contact Us</button>
                 </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 <!-- contact us fild section end -->
 
 <!-- service section start  -->
@@ -477,7 +424,7 @@
                         <thead>
                         <tr class="table-heading">
                             <th class="head-title"><span>Event</span></th>
-                            <th colspan="2" class="head-title"><span>Crossfit</span></th>
+                            <th colspan="2" class="head-title"><span class="active">Crossfit</span></th>
                             <th class="head-title"><span>Medical</span></th>
                             <th class="head-title"><span>Meditation</span></th>
                             <th colspan="2" class="head-title"><span>Eye Balance</span></th>
@@ -722,7 +669,7 @@
                         <option value="service3">Service-3</option>
                     </select>
                     <input type="text" placeholder="Appointment date & time">
-                    <button type="button" class="theme-btn theme-btn2 w-100">Send Request</button>
+                    <button type="button" class="theme-btn theme-btn2 bookingwrp-btn w-100">Send Request</button>
                 </div>
             </div>
         </div>
@@ -757,8 +704,8 @@
                     <div class="single-choose-content">
                         <div class="icon"><img src="assets/images/choose/icon2.png" alt="icon"></div>
                         <div class="choose-info">
-                            <h4 class="choose-title color-white">Medicine of Health </h4>
-                            <p class="choose-subtitle color-white">Lorem ipsum dolor sit amet, consectlit, sed eiusmod tempor incidi</p>
+                            <h4 class="choose-title">Medicine of Health </h4>
+                            <p class="choose-subtitle">Lorem ipsum dolor sit amet, consectlit, sed eiusmod tempor incidi</p>
                         </div>
                     </div>
                 </div>
@@ -767,7 +714,26 @@
     </div>
     <div class="doc-shape">
         <img src="./assets/images/alldoc.png" alt="img">
-    </div>    
+    </div> 
+    <div class="plus-sign">
+        <div class="plus-iocn plus-iocn1" data-name="Dr. Laron Mana" data-position="Dentist">
+            
+        </div>
+        <div class="plus-iocn plus-iocn2" data-name="Dr. Renata Bars" data-position="Founder">
+            
+        </div>
+        <div class="plus-iocn plus-iocn3 active" data-name="Dr. Salam Rana" data-position="Laboratory">
+            
+        </div>
+        <div class="plus-iocn plus-iocn4" data-name="Dr. Medal Paran" data-position="Founder">
+            
+        </div>
+
+        <div class="doc-name-box">
+            <div id="doc_name">Dr. Salam Rana</div>
+            <div id="doc_position">Laboratory</div>
+        </div>
+    </div>  
 </section>
 <!-- choose medical service section end  -->
 
@@ -1044,22 +1010,22 @@
         <div class="row align-items-center">            
             <div class="brand-active">
                 <div class="brand-img">
-                    <img src="assets/images/brand/01.png" alt="image">
+                    <img src="assets/images/brand/logo-01.png" alt="image">
                 </div>
                 <div class="brand-img">
-                    <img src="assets/images/brand/03.png" alt="image">
+                    <img src="assets/images/brand/logo-02.png" alt="image">
                 </div>
                 <div class="brand-img">
-                    <img src="assets/images/brand/04.png" alt="image">
+                    <img src="assets/images/brand/logo-03.png" alt="image">
                 </div>
                 <div class="brand-img">
-                    <img src="assets/images/brand/01.png" alt="image">
+                    <img src="assets/images/brand/logo-04.png" alt="image">
                 </div>
                 <div class="brand-img">
-                    <img src="assets/images/brand/03.png" alt="image">
+                    <img src="assets/images/brand/logo-01.png" alt="image">
                 </div>
                 <div class="brand-img">
-                    <img src="assets/images/brand/04.png" alt="image">
+                    <img src="assets/images/brand/logo-02.png" alt="image">
                 </div>
             </div>
         </div>
@@ -1319,6 +1285,28 @@
 <!-- <script src="assets/js/fbox.js"></script> -->
 <script src="assets/js/jquery.nice-select.min.js"></script>
 <script src="assets/js/script.js"></script>
+
+
+<script>
+//     $( document ).ready(function() {
+//     $('.').on('click', function(){
+//     })
+// });
+
+
+$(document).on('click','.plus-iocn',function(){
+    const docName = $(this).data('name');
+    const docTitle = $(this).data('position')
+    $('#doc_name').text(docName)
+    $("#doc_position").text(docTitle)
+    
+    $(".plus-iocn").removeClass("active");
+    $(this).addClass("active")
+})
+
+</script>
+
+
 
 </body>
 </html>
