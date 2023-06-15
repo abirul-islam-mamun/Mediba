@@ -932,7 +932,7 @@
         padding: 0 45px;
         font-size: 17px;
         font-weight: 400;
-        @media (max-width: 425px) {
+        @media (max-width: 991px) {
            height: 60px;
            font-size: 14px;
         }
@@ -949,10 +949,12 @@
         background: #081e41;
         color: $white;
         font-size: 18px;
-        @media (max-width: 425px) {
+        @media (max-width: 991px) {
            height: 60px;
            font-size: 14px;
-           padding: 20px;
+        }
+        @media (max-width: 576px) {
+            padding: 0 20px;
         }
     }
 }

@@ -230,7 +230,7 @@ $(function () {
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
           }
         },
@@ -321,8 +321,9 @@ $(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: false,
-          dots: true
+          infinite: true,
+          dots: true,
+          centerMode: false,
         }
       },
       {
