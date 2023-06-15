@@ -1509,3 +1509,10 @@
 		}
 	}
 }
+
+.wpo-site-header #navbar {
+	@media (max-width:1200px) and (min-width: 992px) {
+		position: relative;
+		left: 90px;
+	}
+  }

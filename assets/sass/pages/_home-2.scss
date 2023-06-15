@@ -1317,12 +1317,13 @@
     }
     .second-team-single.slick-current {
             .second-team-content {
-                // background-color: rgb(255, 255, 255);
-                // box-shadow: 0px 0px 81px 0px rgba(0, 0, 0, 0.17);
+                background-color: rgb(255, 255, 255);
+                   box-shadow: 0px 8px 12px 0px rgba(0,0,0,.17);
+
                 .doc-information {
                     .medishape{
-                        // visibility: visible;
-                        // opacity: 1;
+                        visibility: visible;
+                        opacity: 1;
                     }
                 }
             }
@@ -1347,7 +1348,7 @@
     }
     .second-team-content {
         background-color: rgb(255, 255, 255);
-        box-shadow: 0px 0px 81px 0px rgba(0, 0, 0, 0.05);
+        // box-shadow: 0px 0px 81px 0px rgba(0, 0, 0, 0.05);
         text-align: center;
         transition: all .3s ease;
         .doc-information {

@@ -302,7 +302,7 @@ $(function () {
   $('.second-team-active').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: false,
+    centerMode: true,
     arrows: false,
     dots: true,
     infinite: true,
