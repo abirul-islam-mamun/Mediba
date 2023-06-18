@@ -810,6 +810,9 @@
 
             }
         }
+        .doc-name-box1 {
+            
+        }
         @media (max-width:1700px) {
             .plus-iocn1{
                 top: 360px;
@@ -1025,6 +1028,131 @@
 
 
 //time table area start 
+.table-button-list {
+    .nav-tabs {
+        border: none;
+        @media (max-width:991px) {
+            row-gap: 10px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        @media (max-width:364px) {
+            justify-content: center;
+        }
+        .nav-link {
+            width: 164px;
+            background: #edf1f8;
+            border: 1px solid #ededed;
+            border-radius: 0px;
+            padding: 0px 0;
+            font-size: 17px;
+            font-weight: 700;
+            color: #151616;
+            text-align: center;
+            padding: 15px 0;
+            height: 95px;
+            border-right: 1px solid rgba(0,0,0,0);
+            span{
+                transition: all .3s ease;
+            }
+            &:first-child{
+                width: 150px;
+            }
+            &:nth-child(2){
+                width: 328px;
+            }
+            &:nth-child(5){
+                width: 310px;
+            }
+            &:last-child{
+                width: 174px;
+            }
+            &:hover{   
+                span{   
+                    background: $them-1;
+                    color: $white;
+                    display: inline-block;
+                    width: 90%;
+                    padding: 15px 0;
+                }
+                &:nth-child(2){
+                    span{
+                        width: 66%;
+                    }
+                }
+                &:nth-child(3){
+                    span{
+                        width: 90%;
+                    }
+                }
+                &:nth-child(4){
+                    span{
+                        width: 90%;
+                    }
+                }
+                &:nth-child(5){
+                    span{
+                        width: 80%;                        
+                    }
+                }
+                &:last-child{
+                    span{
+                        width: 90%;
+                    }
+                }
+            }
+            @media (max-width:1400px) {
+                width: 138px;
+                &:first-child{
+                    width: 143px;
+                }
+                &:nth-child(2){
+                    width: 282px;
+                }
+                &:nth-child(5){
+                    width: 267px;
+                }
+                &:last-child{
+                    width: 141px;
+                }
+            }
+            @media (max-width:1200px) {
+                width: 108px;
+                &:first-child{
+                    width: 143px;
+                }
+                &:nth-child(2){
+                    width: 236px;
+                }
+                &:nth-child(5){
+                    width: 217px;
+                }
+                &:last-child{
+                    width: 118px;
+                }
+            }
+            @media (max-width:991px) {
+                height: 75px;
+                font-size: 15px;
+                max-width: 118px;
+                padding: 0;
+            }
+        }
+        .nav-link.active{
+            span{     
+                background: $them-1;
+                color: $white;
+                display: inline-block;
+                width: 90%;
+                padding: 15px 0;
+                @media (max-width:991px) {
+                    padding: 10px 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 .time-table {
     .table-heading {
         .head-title{
