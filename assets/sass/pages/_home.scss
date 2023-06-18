@@ -49,6 +49,9 @@
         color: $white;
         line-height: 28px;
         margin-top: -36px;
+        @media (max-width:991px) {
+            margin-top: 10px;
+        }
         @media (max-width: 768px) {
             font-size: 15px;
         }
@@ -231,6 +234,16 @@
         text-align: end;   
         @media (max-width:991px) {
             text-align: start;
+        }
+        .book-btn {
+            &:hover{
+                color: $them-1;
+                background: $white;
+                &::before{
+                    background: $white;
+                    border: 4px solid $them-1;
+                }
+            }
         }
     }
     .shape01 {
@@ -434,6 +447,10 @@
     display: flex !important;
     border-radius: 10px;
     box-shadow: 0px 0px 79px 0px rgba(0, 0, 0, 0.08);
+    align-items: center;
+    @media (max-width: 1440px) {
+        align-items: unset;
+    }
     .medi-tab-content {
         flex-basis: 50%;
         padding: 75px 45px;
@@ -714,6 +731,7 @@
     }
 }
 .brand-active {
+
     .brand-img {
         text-align: center;
         img {
@@ -721,6 +739,7 @@
             max-width: 200px;
             width: 100%;
             transition: all .3s ease;
+            height: 50px;
             filter: grayscale(1);
             cursor: pointer;
             &:hover{
@@ -728,6 +747,7 @@
             }
             @media (max-width: 768px) {
                 max-width: 155px;
+                height: auto;
             }
         }
     }

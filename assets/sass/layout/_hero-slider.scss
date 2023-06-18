@@ -54,7 +54,16 @@
         }
     }
 }
+.slide-s2{
+    @media (max-width:768px) {
+        height: 550px;
+    }
+}
+
 .hero-first-content {
+    @media (max-width: 576px) {
+        padding-left: 10px;
+    }
     .title {
         font-size: 70px;
         font-weight: 700;
@@ -152,18 +161,6 @@
 .hero-content-s2{
     position: relative;
     z-index: 111;
-}
-.slide-s2{
-    // &::before{
-    //     position: absolute;
-    //     content: "";
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     height: 100%;
-    //     background: rgb(255, 255, 255, 0.5);
-    //     z-index: 1;
-    // }
 }
 
 .hero-title {

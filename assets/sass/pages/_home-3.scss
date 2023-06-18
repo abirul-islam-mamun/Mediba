@@ -462,6 +462,9 @@
         position: relative;
         overflow: hidden;
         flex-basis: 45%;
+        @media (max-width: 1300px) {
+            padding: 50px 0 50px 50px;        
+        }
         @media (max-width: 1200px) {
             padding: 45px 0 45px 20px;        
         }
