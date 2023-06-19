@@ -213,6 +213,7 @@
 .second-about {
     background: #edf1f8;
     z-index: 1;
+    position: relative;
     &::before{
         width: 21%;
         height: 100%;
@@ -451,6 +452,13 @@
             line-height: 26px;
             margin-top: 10px;
         }
+    }
+}
+
+.first-about.second-about.about-page-about-section {
+    background: $white;
+    &::before{
+        display: none;
     }
 }
 // second about area end
@@ -741,8 +749,6 @@
             background: $them-5;
             border-radius: 50%;
             cursor: pointer;
-            i{
-            }
             position: absolute;
             &::before{
                 content: "+";
@@ -768,8 +774,6 @@
                 visibility: hidden;
                 display: none;
                 transition: all .3s ease;
-            }        
-            i{
             }
         }
         .plus-iocn1 {
@@ -1631,6 +1635,10 @@
     overflow: hidden;
     padding-top: 100px;
     padding-bottom: 415px;
+    @media (max-width:576px) {
+        padding-top: 60px;
+        padding-bottom: 375px;
+    }
     .container {
         position: relative;
         .shape-01 {
@@ -2021,6 +2029,9 @@
     @media (max-width: 1200px) {
         padding: 100px 0px;
     }
+    @media (max-width: 576px) {
+        padding: 60px 0px;
+    }
     
 }
 
@@ -2028,6 +2039,10 @@
 .blog-area.second-page-blog{
     padding-top: 100px;
     padding-bottom: 160px;
+    @media (max-width: 576px) {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
 }
 .second-blog-active {
     margin: 0 -15px;
@@ -2245,10 +2260,7 @@
             border-radius: 0%;            
         }
         @media (max-width: 576px) {
-            padding: 20px;           
-        }
-        @media (max-width: 480px) {
-            padding: 20px 0;           
+            padding: 60px;           
         }
         .container{
             .row{

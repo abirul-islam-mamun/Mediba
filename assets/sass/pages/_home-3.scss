@@ -552,6 +552,9 @@
     background: #e6eff4;
     position: relative;
 
+    .choose-content{
+        margin-bottom: 30px;
+    }
     &::after{
         content: "";
         position: absolute;
@@ -568,6 +571,7 @@
         margin-bottom: 0;
         background: $them-5;
         border: none;
+
 
         &:last-child{
             background: $white;
@@ -727,6 +731,9 @@
     margin-bottom: -100px;
     position: relative;
     z-index: 11;
+    @media (max-width: 576px) {
+        padding-top: 60px;
+    }
     .third-team-active {
         .slick-slide {
             margin: 0 15px;
@@ -815,6 +822,9 @@
     padding: 230px 0 130px 0;
     position: relative;
     z-index: 1;
+    @media (max-width: 576px) {
+        padding: 190px 0 90px 0;
+    }
     .testimoni-active {
         .slick-list {
             padding-bottom: 80px;

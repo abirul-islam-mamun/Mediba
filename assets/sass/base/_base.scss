@@ -61,6 +61,10 @@ img{
 .section-padding {
     padding-top: 100px;
     padding-bottom: 70px;
+    @media (max-width: 576px) {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
 }
 
 .d-flex {

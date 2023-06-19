@@ -101,6 +101,9 @@
 //counter start 
 .first-page-counter{
     padding-bottom: 70px;
+    @media (max-width: 576px) {
+        padding-bottom: 30px;
+    }
 }
 .single-count {
     background: #dce8ef;
@@ -737,7 +740,6 @@
         img {
             margin: auto;
             max-width: 200px;
-            width: 100%;
             transition: all .3s ease;
             height: 50px;
             filter: grayscale(1);

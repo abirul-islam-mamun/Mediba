@@ -303,6 +303,9 @@
 
 .active-docteam{
     margin-bottom: 50px;
+    @media (max-width:576px) {
+        margin-bottom: 45px;
+    }
     .slick-dots {
         display: flex;
         position: absolute;

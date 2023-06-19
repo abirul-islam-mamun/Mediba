@@ -612,21 +612,29 @@ $(function () {
   }
 
 // project isotop filtering 
-// init Isotope
-var $grid = $(".project-grid").isotope({
-  itemSelector: '.grid-item',
-  // layoutMode: 'fitRows'
+
+$(window).on('load', function() {
+  var $container = $('.project-grid');
+
+  $container.imagesLoaded( function() {
+      $container.isotope({
+          itemSelector : '.grid-item', 
+          layoutMode : 'masonry',
+          percentPosition: true
+      });
+  });
+  
+  $('.filter-button-group').on( 'click', '.nav-link', function() {
+      $(".filter-button-group .nav-link").removeClass('active')
+      $(this).addClass('active')
+      var sortByValue = $(this).attr('data-filter');
+      $container.isotope({
+          filter:sortByValue
+      })
+  });
 });
 
-// sort items on button click
-$('.filter-button-group').on( 'click', '.nav-link', function() {
-  $(".filter-button-group .nav-link").removeClass('active')
-  $(this).addClass('active')
-var sortByValue = $(this).attr('data-filter');
-$grid.isotope({
-  filter:sortByValue
-})
-});
+
 
 // wow js 
 new WOW().init();
@@ -641,10 +649,6 @@ $(document).ready(function() {
 
 //choose more section image upper click plust and show the name box
 $(document).on('click','.plus-iocn',function(){
-  const docName = $(this).data('name');
-  const docTitle = $(this).data('position')
-  $('#doc_name').text(docName)
-  $("#doc_position").text(docTitle)
   
   $(".plus-iocn").removeClass("active");
   $(this).addClass("active")
