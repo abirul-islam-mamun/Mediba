@@ -1,6 +1,6 @@
-// third home page styl start 
+/* 6. home-style-3  */
 
-// third service section start  
+/* 6.1 mediba-service-section-s3  */
 .service-third-single {
     padding: 30px 30px 30px 0;
     display: flex;
@@ -108,7 +108,7 @@
 }
 //third service section end 
 
-//third about section start 
+/* 6.2 mediba-about-section-s3  */
 .third-about {
     .third-about-div {
         position: relative;
@@ -310,12 +310,11 @@
     }
 }
 
-
 //third about section end 
 
 
+/* 6.3 mediba-counter-section-s3  */
 
-// counter area start 
 .first-counter-area.third-counter-area {
     background-image: url(../images/counter/counter-bg.jpg);
     background-position: center;
@@ -372,8 +371,7 @@
 }
 // counter area end 
 
-
-//service section start 
+/* 6.4 mediba-service-section-s3  */
 .best-single-service {
     padding: 10px;
     border: 1px solid $border-2;
@@ -547,7 +545,7 @@
 }
 //service section end 
 
-// choose section start 
+/* 6.5 mediba-choose-section-s3  */
 .choose-service-area.third-choose-area{
     background: #e6eff4;
     position: relative;
@@ -654,7 +652,8 @@
 }
 // choose section end 
 
-// service contact start
+/* 6.6 mediba-cta-section-s3 */ 
+
 .service-contact { 
     position: relative;
     z-index: 11;
@@ -725,7 +724,7 @@
 }
 // service contact end
 
-// third team member start 
+/* 6.7 mediba-team-section-s3 */
 .third-team-area {
     padding-top: 100px;
     margin-bottom: -100px;
@@ -815,8 +814,7 @@
 }
 // third team member end 
 
-
-// testimonials section start 
+/* 6.8 mediba-testimonials-section */
 .testimoni-area {
     background: #203240;
     padding: 230px 0 130px 0;
@@ -904,12 +902,6 @@
     text-align: center;
     position: relative;
     transition: all .3s ease;
-    // background-image: url(../images/testimoni/shape.png);
-    // background-position: top;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // height: 380px;
-    // width: 370px;
     @media (max-width: 1200px) {
         padding: 45px 25px 85px 25px;
     }
@@ -984,7 +976,7 @@
 // testimonials section end 
   
 
-// third contact start 
+/* 6.9 mediba-contact-section */
 .third-contact-area {
     margin-bottom: -180px;
     .google-map {
@@ -1106,8 +1098,7 @@
 }
 // third contact end 
 
-
-//experience section start
+/* 6.10 mediba-experience-section */
 .experience-area {
     background-image: url(../images/exp/experiencebg.jpg);
     background-position: center;
@@ -1225,8 +1216,7 @@
 }
 //experience section end
 
-//pricing section start 
-
+/* 6.11 mediba-pricing-section */
 .pricing-btn-list{
     border-bottom: none;
     justify-content: center;
@@ -1437,7 +1427,7 @@
 
 // pricing section end 
 
-//blog area start 
+/* 6.12 mediba-blog-section-s3 */
 .third-blog-area{
     padding-bottom: 125px;
     padding-top: 30px;

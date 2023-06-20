@@ -1,6 +1,6 @@
+/* 5. home-style-2 */
 
-
-///////////////////// second home page start \\\\\\\\\\\\\\\\\
+/* 5.1 mediba-contact-section */
 
 .contact-us-area {
     background-image: url(../images/contact/contact-bg.jpg);
@@ -86,7 +86,7 @@
     }
 }
 
-// service area start 
+/* 5.2 mediba-service-section-s2 */
 .single-service {
     .service-bg {
         background-image: url(../images/service/service01.jpg);
@@ -209,7 +209,7 @@
 
 // service area end 
 
-// second about area start 
+/* 5.3 mediba-about-section-s2 */
 .second-about {
     background: #edf1f8;
     z-index: 1;
@@ -463,8 +463,7 @@
 }
 // second about area end
 
-
-// second booking section start 
+/* 5.4 mediba-booking-section-s2 */
 .second-booking{
     background-image: url(../images/book/bookingbg-02.jpg);
     background-position: center;
@@ -702,7 +701,7 @@
 }
 // second booking section end 
 
-// choose service seciton start 
+/* 5.5 mediba-choose-section */
 .choose-service-area {
     position: relative;
     overflow: hidden;
@@ -1089,7 +1088,7 @@
 // choose service seciton end 
 
 
-//time table area start 
+/* 5.6 mediba-time-schedule-section */
 .table-button-list {
     .nav-tabs {
         border: none;
@@ -1414,7 +1413,7 @@
 }
 // time table area end 
 
-// second team section start 
+/* 5.7 mediba-team-section-s2  */
 .second-team-area {
     position: relative;
     .redshape {
@@ -1627,7 +1626,7 @@
 }
 // second team section end 
 
-// working process start 
+/* 5.8 mediba-working-proccess-section */
 
 .working-proccess-area {
     background: #e7ebf2;
@@ -1819,7 +1818,7 @@
 
 
   
-// service video section start 
+/* 5.9 mediba-video-section */
 .service-video {
     background-image: url(../images/video/videobg.jpg);
     height: 630px;
@@ -2012,7 +2011,7 @@
 }
 // service video section end 
 
-// brand area 
+/* 5.10 mediba-brand-section-s2 */
 .brand-area.second-page-brand{
     padding: 100px 80px;
     border-bottom: 1px solid #dddddd;
@@ -2035,7 +2034,7 @@
     
 }
 
-// blog area start 
+/* 5.11 mediba-blog-section-s2 */
 .blog-area.second-page-blog{
     padding-top: 100px;
     padding-bottom: 160px;
@@ -2210,7 +2209,7 @@
 // blog area end 
 
 
-// second cta section sta
+/* 5.12 mediba-cta-section-s2 */
 .second-cta {
     margin: 0 175px;
     position: relative;
@@ -2238,6 +2237,7 @@
             top: 50%;
             transform: translateY(-50%);
             left: 35px;
+            max-width: 135px;
             @media (max-width:1850px) {
                 left: 2%;
                 img{

@@ -1,3 +1,84 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name:     Mediba – Medical & Health HTML5 Template
+Version:        1.0.0
+-------------------------------------------------------------------*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+1. General
+	1.1 Theme Reset Style
+	1.2 Global Elements
+
+2. header
+	2.1 topbar
+	2.2 navigation
+
+3. content
+	3.1 hero-style-section
+	3.2 mediba-about-section
+	3.3 mediba-counter-section
+	3.4 mediba-apointment-section
+	3.5 mediba-medical-lab-section
+	3.6 mediba-project-section
+	3.7 mediba-brand-section
+	3.8 mediba-cta-section
+	3.9 mediba-newsletter-section
+	3.10 mediba-service-section  
+	3.11 mediba-blog-section 
+	3.12 mediba-team-section
+	3.12 mediba-team-section
+
+4. wpo-footer
+
+5. home-style-2
+    5.1 mediba-contact-section
+    5.2 mediba-service-section-s2
+    5.3 mediba-about-section-s2
+    5.4 mediba-booking-section-s2
+    5.5 mediba-choose-section
+    5.6 mediba-time-schedule-section
+    5.7 mediba-team-section-s2
+    5.8 mediba-working-proccess-section
+    5.9 mediba-video-section
+    5.10 mediba-brand-section-s2
+    5.11 mediba-blog-section-s2
+    5.12 mediba-cta-section-s2
+
+6. home-style-3
+    6.1 mediba-service-section-s3 
+    6.2 mediba-about-section-s3
+    6.3 mediba-counter-section-s3
+    6.4 mediba-service-section-s3
+    6.5 mediba-choose-section-s3
+    6.6 mediba-cta-section-s3
+    6.7 mediba-team-section-s3
+    6.8 mediba-testimonials-section
+    6.9 mediba-contact-section
+    6.10 mediba-experience-section
+    6.11 mediba-pricing-section
+    6.12 mediba-blog-section-s3
+
+
+7. mediba-service-single
+
+8. mediba-blog-single
+
+9. mediba-project-single
+
+10. mediba-team-details
+
+11. mediba-error-page
+
+
+
+
+----------------------------------------------------------------*/
+
+
+
+
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/Variables";
@@ -26,7 +107,7 @@
 @import "pages/blog_details";
 @import "pages/project_details";
 @import "pages/team_details";
-@import "pages/404";
+@import "pages/error_page";
 
 
 

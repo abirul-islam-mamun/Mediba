@@ -119,10 +119,9 @@ $(function () {
 
       searchToggleBtn.on("click", function(e) {
           searchContent.toggleClass("header-search-content-toggle");
-          searchToggleBtnIcon.toggleClass("fi flaticon-loupe fi ti-close");
+          // searchToggleBtnIcon.toggleClass("fi flaticon-loupe fi ti-close");
           e.stopPropagation();
       });
-
       body.on("click", function() {
           searchContent.removeClass("header-search-content-toggle");
       }).find(searchContent).on("click", function(e) {

@@ -4,7 +4,6 @@
  *  imagesLoaded PACKAGED
  *	Isotope PACKAGED v3.0.1
  *  jQuery appear plugin
- *  jQuery fancyBox
  *	Masonry PACKAGED
  *	Simple JavaScript Inheritance
  *	jquery countdown

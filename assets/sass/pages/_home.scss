@@ -1,6 +1,5 @@
-// first home page 
 
-// first about page start 
+/* 3.2 mediba-about-section */
 .first-about {
     position: relative;
     &::before{
@@ -98,7 +97,8 @@
         }
     }
 }
-//counter start 
+/* 3.3 mediba-counter-section */
+
 .first-page-counter{
     padding-bottom: 70px;
     @media (max-width: 576px) {
@@ -192,8 +192,7 @@
 }
 //counter end 
 
-
-// book apointment start 
+/* 3.4 mediba-apointment-section */
 .book-appoint-area {
     background-image: url(../images/book/book.jpg);
     position: relative;
@@ -290,8 +289,7 @@
     }
 }
 // book apointment end 
-
-// medical lab section start 
+/* 3.5 mediba-medical-lab-section */
 .medical-lab-area {
     position: relative;
     &::before{
@@ -518,9 +516,7 @@
 }
 // medical lab section end 
 
-
-// our best project or portfolio (projects-area)
-
+/* 3.6 mediba-project-section */
 .masonary-btn-wrap {
     .text {
         color: $ash-font;
@@ -719,9 +715,7 @@
 
 
 
-
-
-//brand section start 
+/* 3.7 mediba-brand-section */
 .brand-area.first-brand.second-page-brand {
     padding: 70px 0 80px;
 }
@@ -756,7 +750,7 @@
 }
 //brand section end 
 
-// appontment section start 
+/* 3.8 mediba-cta-section */
 .appoint-head {
     background: $them-5;
     @media (max-width: 425px) {
@@ -818,6 +812,8 @@
         }
     }
 }
+
+/* 3.9 mediba-newsletter-section */
 .appointment-form-wrap{
     background: $them-bg-2;
     position: relative;
@@ -885,7 +881,7 @@
     }
 }
 
-// first cta section start 
+
 .first-cta {
     background-image: url(../images/cta/cta-bg.jpg);
     background-position: center;
@@ -902,6 +898,7 @@
         top: 50%;
         transform: translateY(-50%);
         left: -13%;
+        max-width: 135px;
         @media (max-width:1653px) {
             left: -8%;
             img{

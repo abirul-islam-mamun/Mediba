@@ -1,4 +1,114 @@
-// blog area
+
+/* 3.10 mediba-service-section  */
+ 
+.medical-service {
+    background: transparent;
+    margin-bottom: 30px;
+    .team-img {
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            height: 100%;
+            background-color: rgb(32, 50, 64);
+            right: 0;
+            top: 0;
+            width: 0;
+            transition: all .4s ease;
+            visibility: hidden;
+            opacity: 0;    
+        }
+        a {
+            img{
+                width: 100%;
+            }
+        }
+        .medi-service-icon {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: all .7s ease;
+            height: 60px;
+            width: 60px;
+            background: $them-1;
+            color: $white;
+            font-size: 30px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .medi-info-details {
+        border: 1px solid #dddddd;
+        border-top: none;
+        padding: 30px 35px;
+        transition: all .3s ease;
+        @media (max-width: 1200px) and (min-width:991px) {
+            padding: 25px 30px;
+        }
+        @media (max-width: 576px) {
+            padding: 20px;
+        }
+        .team-title {
+            padding-top: 0;
+            a{
+                padding: 0;
+                color: $font-color-1;
+                transition: all .3s ease;
+                margin-bottom: 10px;
+                display: block;
+                font-weight: 700;
+                font-size: 22px;
+                @media (max-width: 1100px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 991px) {
+                    font-size: 18px;
+                }
+            }
+        }
+        .team-info {
+            padding: 0;
+            font-size: 17px;
+            line-height: 26px;
+            color: #636363;
+            margin-bottom: 25px;
+            @media (max-width: 991px) {
+                font-size: 16px;
+            }
+        }
+    }
+    &:hover{
+        .team-img {
+            &::before{
+                visibility: visible;
+                opacity: 0.79;
+                width: 50%;
+            }
+            .medi-service-icon{
+                bottom: 50%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                a {
+                    background: $them-1;
+                }
+            } 
+        }
+        .medi-info-details{
+            box-shadow: 0px 0px 14.76px 3.24px rgba(0, 0, 0, 0.18);
+            .team-title {
+                a{ color: $them-1;}
+            }
+        }
+        .service-more-btn {
+            background: $them-1;
+        }
+    }
+}
+
+
+/* 3.11 mediba-blog-section  */
 .blog-area.first-page-blog{
     margin-bottom: 50px;
 }
@@ -192,114 +302,7 @@
     
 }
 
-
-// medical service 
- 
-.medical-service {
-    background: transparent;
-    margin-bottom: 30px;
-    .team-img {
-        position: relative;
-        &::before{
-            position: absolute;
-            content: "";
-            height: 100%;
-            background-color: rgb(32, 50, 64);
-            right: 0;
-            top: 0;
-            width: 0;
-            transition: all .4s ease;
-            visibility: hidden;
-            opacity: 0;    
-        }
-        a {
-            img{
-                width: 100%;
-            }
-        }
-        .medi-service-icon {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            transition: all .7s ease;
-            height: 60px;
-            width: 60px;
-            background: $them-1;
-            color: $white;
-            font-size: 30px;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    .medi-info-details {
-        border: 1px solid #dddddd;
-        border-top: none;
-        padding: 30px 35px;
-        transition: all .3s ease;
-        @media (max-width: 1200px) and (min-width:991px) {
-            padding: 25px 30px;
-        }
-        @media (max-width: 576px) {
-            padding: 20px;
-        }
-        .team-title {
-            padding-top: 0;
-            a{
-                padding: 0;
-                color: $font-color-1;
-                transition: all .3s ease;
-                margin-bottom: 10px;
-                display: block;
-                font-weight: 700;
-                font-size: 22px;
-                @media (max-width: 1100px) {
-                    font-size: 20px;
-                }
-                @media (max-width: 991px) {
-                    font-size: 18px;
-                }
-            }
-        }
-        .team-info {
-            padding: 0;
-            font-size: 17px;
-            line-height: 26px;
-            color: #636363;
-            margin-bottom: 25px;
-            @media (max-width: 991px) {
-                font-size: 16px;
-            }
-        }
-    }
-    &:hover{
-        .team-img {
-            &::before{
-                visibility: visible;
-                opacity: 0.79;
-                width: 50%;
-            }
-            .medi-service-icon{
-                bottom: 50%;
-                left: 50%;
-                transform: translate(-50%, 50%);
-                a {
-                    background: $them-1;
-                }
-            } 
-        }
-        .medi-info-details{
-            box-shadow: 0px 0px 14.76px 3.24px rgba(0, 0, 0, 0.18);
-            .team-title {
-                a{ color: $them-1;}
-            }
-        }
-        .service-more-btn {
-            background: $them-1;
-        }
-    }
-}
+/* 3.12 mediba-team-section  */
 
 .active-docteam{
     margin-bottom: 50px;
