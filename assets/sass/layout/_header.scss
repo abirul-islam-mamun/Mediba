@@ -200,6 +200,14 @@
   }
   
   .wpo-site-header #navbar {
+	position: relative;
+	right: -80px;
+	@media (max-width: 1800px) {
+		right: -40px;
+	}
+	@media (max-width: 1700px) {
+		position: unset;
+	}
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;

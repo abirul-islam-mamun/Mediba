@@ -1051,7 +1051,19 @@ img {
   }
 }
 .wpo-site-header #navbar {
+  position: relative;
+  right: -80px;
   transition: all 0.5s;
+}
+@media (max-width: 1800px) {
+  .wpo-site-header #navbar {
+    right: -40px;
+  }
+}
+@media (max-width: 1700px) {
+  .wpo-site-header #navbar {
+    position: unset;
+  }
 }
 
 .wpo-site-header #navbar > ul li a:hover,

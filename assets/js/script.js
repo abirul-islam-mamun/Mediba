@@ -579,24 +579,24 @@ $(function () {
 
   // = POPUP VIDEO
   // -------------------------------------------*/
-  if ($(".video-btn").length) {
-      $(".video-btn").on("click", function(){
-          $.fancybox({
-              href: this.href,
-              type: $(this).data("type"),
-              'title'         : this.title,
-              helpers     : {
-                  title : { type : 'inside' },
-                  media : {}
-              },
+  // if ($(".video-btn").length) {
+  //     $(".video-btn").on("click", function(){
+  //         $.fancybox({
+  //             href: this.href,
+  //             type: $(this).data("type"),
+  //             'title'         : this.title,
+  //             helpers     : {
+  //                 title : { type : 'inside' },
+  //                 media : {}
+  //             },
 
-              beforeShow : function(){
-                  $(".fancybox-wrap").addClass("gallery-fancybox");
-              }
-          });
-          return false
-      });
-  }
+  //             beforeShow : function(){
+  //                 $(".fancybox-wrap").addClass("gallery-fancybox");
+  //             }
+  //         });
+  //         return false
+  //     });
+  // }
 
   // odometer 
   if ($(".odometer").length) {
@@ -640,10 +640,21 @@ new WOW().init();
 
 
 // video popup
+
 $(document).ready(function() {
-	$('.video-btn').magnificPopup({
-    type: 'iframe'
-  });
+  // $(' ').magnificPopup({
+  //   type: 'iframe'
+  // });
+
+  $('.popup-vido-s1').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+
+    fixedContentPos: false
+});
 });
 
 //choose more section image upper click plust and show the name box
