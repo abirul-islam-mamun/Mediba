@@ -1,13 +1,14 @@
 /*------------------------------------------------------------------
 1. General
 ----------------------------------------------------------------*/
+
+/* 1.1	Theme Reset Style */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
 }
-/* 1.1	Theme Reset Style */
 
 html {
     font-size: $base-font-size;
@@ -22,6 +23,8 @@ body {
     overflow-x: hidden;
     font-family: 'Rubik', sans-serif;
 }
+
+/* 1.2 Global Elements */
 
 p {
     font-size: 18px;
@@ -60,6 +63,9 @@ img{
     max-width: 100%;
 }
 
+/*---------------------------
+	section padding start
+----------------------------*/
 .section-padding {
     padding-top: 100px;
     padding-bottom: 70px;
@@ -68,7 +74,6 @@ img{
         padding-bottom: 30px;
     }
 }
-
-.d-flex {
-    display: flex;
-}
+/*---------------------------
+	section padding end
+----------------------------*/

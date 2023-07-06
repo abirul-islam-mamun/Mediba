@@ -78,22 +78,24 @@ Version:        1.0.0
 
 
 
+/*--------------------------------------------------------------
+1. General
+----------------------------------------------------------------*/
 
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/Variables";
+//helpers
+@import "helper/variables";
 
-@import "base/animations";
+//base 
 @import "base/base";
-@import "base/typography";
-@import "base/typography";
-@import "base/utilities";
 
-@import "components/button";
+
+//components
 @import "components/section-title";
+@import "components/button";
 @import "components/card";
 @import "components/form";
 
+//Layout
 @import "layout/header";
 @import "layout/hero-slider";
 @import "layout/footer";
@@ -101,24 +103,17 @@ Version:        1.0.0
 
 //page
 @import "pages/home";
+
 @import "pages/home-2";
+
 @import "pages/home-3";
+
 @import "pages/service_details";
+
 @import "pages/blog_details";
+
 @import "pages/project_details";
+
 @import "pages/team_details";
+
 @import "pages/error_page";
-
-
-
-
-
-
-
-
-
-
-
-
-
-

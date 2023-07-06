@@ -713,8 +713,6 @@
     }
 }
 
-
-
 /* 3.7 mediba-brand-section */
 .brand-area.first-brand.second-page-brand {
     padding: 70px 0 80px;
@@ -812,6 +810,38 @@
         }
     }
 }
+.first-appoint-form {
+    margin-bottom: 30px;
+    input{
+        height: 42px;
+        padding: 0 25px;
+        background: $white;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+        color: $ash-font;
+        outline: none;
+        border: none;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .appoint-submit {
+        height: 50px;
+        border-radius: 5px;
+        color: $white;
+        text-align: center;
+        background: $them-1;
+        transition: all .3s ease;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 17px;
+        text-transform: uppercase;
+        &:hover{
+            background: $them-4;
+        }
+    }
+}
 
 /* 3.9 mediba-newsletter-section */
 .appointment-form-wrap{
@@ -880,7 +910,6 @@
         }
     }
 }
-
 
 .first-cta {
     background-image: url(../images/cta/cta-bg.jpg);

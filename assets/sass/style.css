@@ -76,23 +76,17 @@ Version:        1.0.0
 
 
 ----------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1. General
+----------------------------------------------------------------*/
+/*---------------------------
+	Font family
+----------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
-.fadeAnima {
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /*------------------------------------------------------------------
 1. General
 ----------------------------------------------------------------*/
+/* 1.1	Theme Reset Style */
 * {
   padding: 0;
   margin: 0;
@@ -100,7 +94,6 @@ Version:        1.0.0
   list-style: none;
 }
 
-/* 1.1	Theme Reset Style */
 html {
   font-size: 20px;
 }
@@ -117,6 +110,7 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+/* 1.2 Global Elements */
 p {
   font-size: 18px;
   color: #222222;
@@ -154,6 +148,9 @@ img {
   max-width: 100%;
 }
 
+/*---------------------------
+	section padding start
+----------------------------*/
 .section-padding {
   padding-top: 100px;
   padding-bottom: 70px;
@@ -165,56 +162,12 @@ img {
   }
 }
 
-.d-flex {
-  display: flex;
-}
-
-.theme-btn,
-.theme-btn2 {
-  display: inline-block;
-  background: #203240;
-  color: #fff;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  font-size: 17px;
-  font-weight: 400;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  padding: 0 30px 0 50px;
-  position: relative;
-}
-.theme-btn::before,
-.theme-btn2::before {
-  position: absolute;
-  content: "";
-  height: 15px;
-  width: 15px;
-  border: 4px solid #fff;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 25px;
-}
-.theme-btn:hover,
-.theme-btn2:hover {
-  background: #e72254;
-  color: #fff;
-  border: 1px solid #e72254;
-}
-
-.theme-btn2 {
-  background: #e72254;
-  border: 1px solid #e72254;
-}
-.theme-btn2:hover {
-  background: #203240;
-  color: #fff;
-  border: 1px solid #203240;
-}
-
+/*---------------------------
+	section padding end
+----------------------------*/
+/*---------------------------
+	section title start 
+----------------------------*/
 .section-title-first .small-title {
   font-size: 19px;
   color: #e72254;
@@ -280,6 +233,12 @@ img {
   }
 }
 
+/*---------------------------
+	section title end 
+----------------------------*/
+/*---------------------------
+	Breadcrumbs start 
+----------------------------*/
 .camp-link {
   display: flex;
   align-items: center;
@@ -295,10 +254,68 @@ img {
   font-weight: 300;
 }
 
+/*---------------------------
+	Breadcrumbs end 
+----------------------------*/
+/*---------------------------
+	custom white color
+----------------------------*/
 .color-white {
   color: #fff;
 }
 
+/*---------------------------
+	theme button style start 
+----------------------------*/
+.theme-btn,
+.theme-btn2 {
+  display: inline-block;
+  background: #203240;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 400;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0 30px 0 50px;
+  position: relative;
+}
+.theme-btn::before,
+.theme-btn2::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+}
+.theme-btn:hover,
+.theme-btn2:hover {
+  background: #e72254;
+  color: #fff;
+  border: 1px solid #e72254;
+}
+
+.theme-btn2 {
+  background: #e72254;
+  border: 1px solid #e72254;
+}
+.theme-btn2:hover {
+  background: #203240;
+  color: #fff;
+  border: 1px solid #203240;
+}
+
+/*---------------------------
+	theme button style end 
+----------------------------*/
 /* 3.10 mediba-service-section  */
 .medical-service {
   background: transparent;
@@ -830,39 +847,6 @@ img {
   .single-docteam.slick-slide {
     padding: 0 20px;
   }
-}
-
-.first-appoint-form {
-  margin-bottom: 30px;
-}
-.first-appoint-form input {
-  height: 42px;
-  padding: 0 25px;
-  background: #fff;
-  border-radius: 5px;
-  width: 100%;
-  font-size: 16px;
-  color: #636363;
-  outline: none;
-  border: none;
-  margin-bottom: 20px;
-  display: block;
-}
-.first-appoint-form .appoint-submit {
-  height: 50px;
-  border-radius: 5px;
-  color: #fff;
-  text-align: center;
-  background: #e72254;
-  transition: all 0.3s ease;
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 17px;
-  text-transform: uppercase;
-}
-.first-appoint-form .appoint-submit:hover {
-  background: #081e41;
 }
 
 /*--------------------------------------------------------------
@@ -3924,6 +3908,39 @@ img {
   .appoint-head-wrap .head-title {
     text-align: center;
   }
+}
+
+.first-appoint-form {
+  margin-bottom: 30px;
+}
+.first-appoint-form input {
+  height: 42px;
+  padding: 0 25px;
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  color: #636363;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
+  display: block;
+}
+.first-appoint-form .appoint-submit {
+  height: 50px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  background: #e72254;
+  transition: all 0.3s ease;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.first-appoint-form .appoint-submit:hover {
+  background: #081e41;
 }
 
 /* 3.9 mediba-newsletter-section */

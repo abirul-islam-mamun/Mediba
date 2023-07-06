@@ -642,9 +642,7 @@ new WOW().init();
 // video popup
 
 $(document).ready(function() {
-  // $(' ').magnificPopup({
-  //   type: 'iframe'
-  // });
+
 
   $('.popup-vido-s1').magnificPopup({
     disableOn: 700,
