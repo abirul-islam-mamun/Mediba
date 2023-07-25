@@ -6,15 +6,20 @@ $(function () {
       var navbar = $(".navigation-holder");
       var openBtn = $(".mobail-menu .open-btn");
       var xbutton = $(".mobail-menu .navbar-toggler");
+      var headerTop = $(".header-topbar")
+      
 
       openBtn.on("click", function(e) {
           e.stopImmediatePropagation();
           navbar.toggleClass("slideInn");
           xbutton.toggleClass("x-close");
+          headerTop.toggleClass("d-none")
+
           return false;
       })
   }
   toggleMobileNavigation();
+ 
 
   // Function for toggle class for small menu
   function toggleClassForSmallNav() {
@@ -645,14 +650,15 @@ $(document).ready(function() {
 
 
   $('.popup-vido-s1').magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
+      disableOn: 700,
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
 
-    fixedContentPos: false
-});
+      fixedContentPos: false
+  });
+
 });
 
 //choose more section image upper click plust and show the name box
